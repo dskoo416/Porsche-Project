@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "project_name": "Vuestic",
+    "project_name": "Predictive Plant Control at Bayer",
     "project_owner": 13,
     "team": [13, 5, 28, 14, 17, 28, 23, 11, 16, 19, 12, 28, 11],
     "status": "in progress",
@@ -9,7 +9,7 @@
   },
   {
     "id": 1,
-    "project_name": "Mood board",
+    "project_name": "Prefabricated Home Provider WeberHau",
     "project_owner": 28,
     "team": [28, 10, 12, 28, 14, 27, 5, 4, 8, 23, 19, 18, 24, 11, 18, 12, 28],
     "status": "important",
@@ -17,7 +17,7 @@
   },
   {
     "id": 2,
-    "project_name": "Jenkins",
+    "project_name": "Fresenius Kabi",
     "project_owner": 3,
     "team": [3, 21, 7, 19, 4, 4, 7, 24],
     "status": "important",
@@ -25,7 +25,7 @@
   },
   {
     "id": 3,
-    "project_name": "Springfield media",
+    "project_name": "The Goldbeck Construction Company",
     "project_owner": 17,
     "team": [17, 25, 21, 9, 18, 12, 15, 0, 7, 2, 7],
     "status": "important",
@@ -33,7 +33,7 @@
   },
   {
     "id": 4,
-    "project_name": "Galileo",
+    "project_name": "DKV",
     "project_owner": 7,
     "team": [7, 1, 28, 19, 3],
     "status": "completed",
@@ -41,7 +41,7 @@
   },
   {
     "id": 5,
-    "project_name": "Website redesign",
+    "project_name": "Deutsche Bahn",
     "project_owner": 24,
     "team": [24, 19, 1, 8, 9],
     "status": "completed",
@@ -49,7 +49,7 @@
   },
   {
     "id": 6,
-    "project_name": "Toolset landing",
+    "project_name": "LG Energy Solution",
     "project_owner": 15,
     "team": [15, 16, 8, 6, 11, 21, 3, 20],
     "status": "archived",
@@ -57,7 +57,7 @@
   },
   {
     "id": 7,
-    "project_name": "Complete product redesign",
+    "project_name": "Faster and More Flexible Service for Weber Grill Customers",
     "project_owner": 25,
     "team": [25, 18, 24, 13, 5, 3, 4, 16, 25, 12, 18, 9, 22],
     "status": "completed",
@@ -81,7 +81,7 @@
   },
   {
     "id": 10,
-    "project_name": "Aurora Analytics",
+    "project_name": "Porsche Digital Strategy",
     "project_owner": 12,
     "team": [12, 7, 18, 24, 13, 5],
     "status": "in progress",
@@ -89,7 +89,7 @@
   },
   {
     "id": 11,
-    "project_name": "Quantum Leap",
+    "project_name": "Global Efficiency Program",
     "project_owner": 14,
     "team": [14, 17, 3, 21, 11, 20],
     "status": "planning",
@@ -97,7 +97,7 @@
   },
   {
     "id": 12,
-    "project_name": "Deep Dive Research",
+    "project_name": "Technology Company ABB",
     "project_owner": 8,
     "team": [8, 15, 9, 3, 27, 6],
     "status": "important",
@@ -105,7 +105,7 @@
   },
   {
     "id": 13,
-    "project_name": "Sky High Architecture",
+    "project_name": "RWE Nuclear GmbH",
     "project_owner": 21,
     "team": [21, 2, 17, 18, 4],
     "status": "completed",
@@ -113,7 +113,7 @@
   },
   {
     "id": 14,
-    "project_name": "Tech Horizon",
+    "project_name": "Boehringer Ingelheim",
     "project_owner": 9,
     "team": [9, 19, 24, 1, 22],
     "status": "in progress",
@@ -121,7 +121,7 @@
   },
   {
     "id": 15,
-    "project_name": "Edge of Innovation",
+    "project_name": "Nuclear phaseout in practical terms",
     "project_owner": 16,
     "team": [16, 11, 5, 14, 23],
     "status": "planning",
@@ -129,7 +129,7 @@
   },
   {
     "id": 16,
-    "project_name": "Crypto Ventures",
+    "project_name": "The Porsche Subscription BM",
     "project_owner": 20,
     "team": [20, 7, 15, 26, 12],
     "status": "important",
@@ -137,7 +137,7 @@
   },
   {
     "id": 17,
-    "project_name": "Blockchain Basics",
+    "project_name": "Royal Caribbean",
     "project_owner": 4,
     "team": [4, 8, 3, 22, 27],
     "status": "archived",
@@ -145,7 +145,7 @@
   },
   {
     "id": 18,
-    "project_name": "Virtual Reality Exploration",
+    "project_name": "AGCO Agricultural Machinery ",
     "project_owner": 26,
     "team": [26, 2, 14, 20, 9],
     "status": "in progress",
@@ -153,7 +153,7 @@
   },
   {
     "id": 19,
-    "project_name": "AI in Daily Life",
+    "project_name": "The Zurich Insurance Company Automation",
     "project_owner": 2,
     "team": [2, 13, 24, 5, 11],
     "status": "completed",

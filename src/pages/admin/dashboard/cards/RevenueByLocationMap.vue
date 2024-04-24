@@ -1,7 +1,7 @@
 <template>
   <VaCard class="flex flex-col">
     <VaCardTitle class="flex items-center justify-between">
-      <h1 class="card-title text-secondary font-bold uppercase">Revenue by location</h1>
+      <h1 class="card-title text-secondary font-bold uppercase">Shipment Volume</h1>
     </VaCardTitle>
     <VaCardContent class="flex-1 flex overflow-hidden">
       <VaAspectRatio class="w-full md:min-h-72 overflow-hidden relative flex items-center">
@@ -16,6 +16,7 @@
 import { ref, computed, onMounted } from 'vue'
 import { VaCard } from 'vuestic-ui'
 import type countriesGeoJSON from '../../../../data/geo.json'
+// biome-ignore lint/suspicious/noShadowRestrictedNames: <explanation>
 import Map from '../../../../components/va-charts/chart-types/Map.vue'
 import type { ChartData } from 'chart.js'
 
@@ -37,6 +38,7 @@ onMounted(async () => {
   geoJson.value = (await import('../../../../data/geo.json')).default
 })
 
+// biome-ignore lint/suspicious/noExplicitAny: <explanation>
 const data = computed<ChartData<'choropleth', { feature: any; value: number }[], string>>(() => {
   if (!geoJson.value) {
     return {

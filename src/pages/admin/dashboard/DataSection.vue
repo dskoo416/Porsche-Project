@@ -37,8 +37,8 @@ const { getColor } = useColors()
 
 const dashboardMetrics = computed<DashboardMetric[]>(() => [
   {
-    id: 'openInvoices',
-    title: 'Open invoices',
+    id: 'Carrying Costs',
+    title: 'Carrying Costs',
     value: '$35,548',
     icon: 'mso-attach_money',
     changeText: '$1, 450',
@@ -57,9 +57,9 @@ const dashboardMetrics = computed<DashboardMetric[]>(() => [
     iconColor: getColor('on-info'),
   },
   {
-    id: 'employees',
-    title: 'Employees',
-    value: '25',
+    id: 'Production Cycle Time',
+    title: 'Production Cycle Time (Week)',
+    value: '3.5',
     icon: 'mso-account_circle',
     changeText: '2.5%',
     changeDirection: 'up',
@@ -67,9 +67,9 @@ const dashboardMetrics = computed<DashboardMetric[]>(() => [
     iconColor: getColor('on-danger'),
   },
   {
-    id: 'newProfit',
-    title: 'New profit',
-    value: '27%',
+    id: 'Raw Materials',
+    title: 'Raw Materials (units)',
+    value: '5000',
     icon: 'mso-grade',
     changeText: '4%',
     changeDirection: 'up',

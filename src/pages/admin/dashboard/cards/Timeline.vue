@@ -11,30 +11,29 @@ import VaTimelineItem from '../../../../components/va-timeline-item.vue'
       <table class="mt-4">
         <tbody>
           <VaTimelineItem date="25m ago">
-            <RouterLink class="va-link font-semibold" to="/users">Donald</RouterLink> updated the status of
+            <RouterLink class="va-link font-semibold" to="/users">Nic</RouterLink> updated the status of
             <RouterLink class="va-link font-semibold" to="/users">Refund #1234</RouterLink> to awaiting customer
             response
           </VaTimelineItem>
           <VaTimelineItem date="1h ago">
-            <RouterLink class="va-link font-semibold" to="/users">Lycy Peterson</RouterLink> was added to the group,
-            group name is Overtake
+            <RouterLink class="va-link font-semibold" to="/users">AI-Driven Drug Discovery Platform Update</RouterLink>
           </VaTimelineItem>
           <VaTimelineItem date="2h ago">
-            <RouterLink class="va-link font-semibold" to="/users">Joseph Rust</RouterLink> opened new showcase
-            <RouterLink class="va-link font-semibold" to="/users">Mannat #112233</RouterLink> with theme market
+            <RouterLink class="va-link font-semibold" to="/users">Expansion of Manufacturing Facilities</RouterLink>
+            <RouterLink class="va-link font-semibold" to="/users"></RouterLink>- Daniel Hua
           </VaTimelineItem>
           <VaTimelineItem date="3d ago">
-            <RouterLink class="va-link font-semibold" to="/users">Donald</RouterLink> updated the status to awaiting
+            <RouterLink class="va-link font-semibold" to="/users">Nic</RouterLink> updated the status to awaiting
             customer response
           </VaTimelineItem>
           <VaTimelineItem date="Nov 14, 2023">
-            <RouterLink class="va-link font-semibold" to="/users">Lycy Peterson</RouterLink> was added to the group
+            <RouterLink class="va-link font-semibold" to="/users">Sarah Kim</RouterLink> was added to the group
           </VaTimelineItem>
           <VaTimelineItem date="Nov 14, 2023">
-            <RouterLink class="va-link font-semibold" to="/users">Dan Rya</RouterLink> was added to the group
+            <RouterLink class="va-link font-semibold" to="/users">Andrew Bui</RouterLink> was added to the group
           </VaTimelineItem>
           <VaTimelineItem date="Nov 15, 2023">
-            Project <RouterLink class="va-link font-semibold" to="/projects">Vuestic 2023</RouterLink> was created
+            Project <RouterLink class="va-link font-semibold" to="/projects">Predictive Plant Control</RouterLink> was created
           </VaTimelineItem>
         </tbody>
       </table>

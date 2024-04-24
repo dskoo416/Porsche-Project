@@ -4,9 +4,10 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { Chart as ChartJS, Title, Tooltip, Legend, ArcElement, CategoryScale, ChartOptions } from 'chart.js'
+import { Chart as ChartJS, Title, Tooltip, Legend, ArcElement, CategoryScale, type ChartOptions } from 'chart.js'
 import { ChoroplethController, ProjectionScale, ColorScale, GeoFeature } from 'chartjs-chart-geo'
 import { watchEffect } from 'vue'
+// biome-ignore lint/style/useImportType: <explanation>
 import { ChartData } from 'chart.js'
 
 ChartJS.register(
@@ -29,6 +30,7 @@ function getColor(revenue: number) {
 
 const props = defineProps<{
   options?: ChartOptions<'choropleth'>
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   data: ChartData<'choropleth', { feature: any; value: number }[], string>
 }>()
 
@@ -37,6 +39,7 @@ watchEffect(() => {
     return
   }
 
+  // biome-ignore lint/style/noNonNullAssertion: <explanation>
   new ChartJS(canvas.value.getContext('2d')!, {
     type: 'choropleth',
     data: props.data,

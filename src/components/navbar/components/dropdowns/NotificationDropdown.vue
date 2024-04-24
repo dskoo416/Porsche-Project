@@ -76,14 +76,14 @@ const notifications: INotification[] = [
     updateTimestamp: makeDateFromNow(-12 * 60 * 60 * 1000),
   },
   {
-    message: 'Whoops! Your trial period has expired.',
+    message: 'FDA has approved a new drug',
     icon: 'error_outline',
     id: 3,
     separator: true,
     updateTimestamp: makeDateFromNow(-2 * 24 * 60 * 60 * 1000),
   },
   {
-    message: 'It looks like your timezone is set incorrectly, please change it to avoid issues with Memory.',
+    message: 'Meeting with Porsche Consulting in 30 minutes',
     icon: 'schedule',
     id: 4,
     updateTimestamp: makeDateFromNow(-2 * 7 * 24 * 60 * 60 * 1000),
