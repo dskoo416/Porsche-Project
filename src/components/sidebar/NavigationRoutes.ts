@@ -27,7 +27,6 @@ export default {
       },
     },
 
-
     {
       name: 'settings',
       displayName: 'menu.settings',

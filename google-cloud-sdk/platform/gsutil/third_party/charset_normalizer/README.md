@@ -23,41 +23,41 @@
 
 This project offers you an alternative to **Universal Charset Encoding Detector**, also known as **Chardet**.
 
-| Feature       | [Chardet](https://github.com/chardet/chardet)       | Charset Normalizer | [cChardet](https://github.com/PyYoshi/cChardet) |
-| ------------- | :-------------: | :------------------: | :------------------: |
-| `Fast`         | ❌<br>          | :heavy_check_mark:<br>             | :heavy_check_mark: <br> |
-| `Universal**`     | ❌            | :heavy_check_mark:                 | ❌ |
-| `Reliable` **without** distinguishable standards | ❌ | :heavy_check_mark: | :heavy_check_mark: |
-| `Reliable` **with** distinguishable standards | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| `Free & Open`  | :heavy_check_mark:             | :heavy_check_mark:                | :heavy_check_mark: |
-| `License` | LGPL-2.1 | MIT | MPL-1.1
-| `Native Python` | :heavy_check_mark: | :heavy_check_mark: | ❌ |
-| `Detect spoken language` | ❌ | :heavy_check_mark: | N/A |
-| `Supported Encoding` | 30 | :tada: [93](https://charset-normalizer.readthedocs.io/en/latest/user/support.html#supported-encodings)  | 40
+| Feature                                          | [Chardet](https://github.com/chardet/chardet) |                                           Charset Normalizer                                           | [cChardet](https://github.com/PyYoshi/cChardet) |
+| ------------------------------------------------ | :-------------------------------------------: | :----------------------------------------------------------------------------------------------------: | :---------------------------------------------: |
+| `Fast`                                           |                    ❌<br>                     |                                         :heavy_check_mark:<br>                                         |             :heavy_check_mark: <br>             |
+| `Universal**`                                    |                      ❌                       |                                           :heavy_check_mark:                                           |                       ❌                        |
+| `Reliable` **without** distinguishable standards |                      ❌                       |                                           :heavy_check_mark:                                           |               :heavy_check_mark:                |
+| `Reliable` **with** distinguishable standards    |              :heavy_check_mark:               |                                           :heavy_check_mark:                                           |               :heavy_check_mark:                |
+| `Free & Open`                                    |              :heavy_check_mark:               |                                           :heavy_check_mark:                                           |               :heavy_check_mark:                |
+| `License`                                        |                   LGPL-2.1                    |                                                  MIT                                                   |                     MPL-1.1                     |
+| `Native Python`                                  |              :heavy_check_mark:               |                                           :heavy_check_mark:                                           |                       ❌                        |
+| `Detect spoken language`                         |                      ❌                       |                                           :heavy_check_mark:                                           |                       N/A                       |
+| `Supported Encoding`                             |                      30                       | :tada: [93](https://charset-normalizer.readthedocs.io/en/latest/user/support.html#supported-encodings) |                       40                        |
 
 <p align="center">
 <img src="https://i.imgflip.com/373iay.gif" alt="Reading Normalized Text" width="226"/><img src="https://media.tenor.com/images/c0180f70732a18b4965448d33adba3d0/tenor.gif" alt="Cat Reading Text" width="200"/>
 
-*\*\* : They are clearly using specific code for a specific encoding even if covering most of used one*<br> 
+_\*\* : They are clearly using specific code for a specific encoding even if covering most of used one_<br>
 Did you got there because of the logs? See [https://charset-normalizer.readthedocs.io/en/latest/user/miscellaneous.html](https://charset-normalizer.readthedocs.io/en/latest/user/miscellaneous.html)
 
 ## ⭐ Your support
 
-*Fork, test-it, star-it, submit your ideas! We do listen.*
-  
+_Fork, test-it, star-it, submit your ideas! We do listen._
+
 ## ⚡ Performance
 
 This package offer better performance than its counterpart Chardet. Here are some numbers.
 
-| Package       | Accuracy       | Mean per file (ms) | File per sec (est) |
-| ------------- | :-------------: | :------------------: | :------------------: |
-|      [chardet](https://github.com/chardet/chardet)        |     92 %     |     220 ms      |       5 file/sec        |
-| charset-normalizer |    **98 %**     |     **40 ms**      |       25 file/sec    |
+| Package                                       | Accuracy | Mean per file (ms) | File per sec (est) |
+| --------------------------------------------- | :------: | :----------------: | :----------------: |
+| [chardet](https://github.com/chardet/chardet) |   92 %   |       220 ms       |     5 file/sec     |
+| charset-normalizer                            | **98 %** |     **40 ms**      |    25 file/sec     |
 
-| Package       | 99th percentile       | 95th percentile | 50th percentile |
-| ------------- | :-------------: | :------------------: | :------------------: |
-|      [chardet](https://github.com/chardet/chardet)        |     1115 ms     |     300 ms      |       27 ms        |
-| charset-normalizer |    460 ms     |     240 ms      |       18 ms    |
+| Package                                       | 99th percentile | 95th percentile | 50th percentile |
+| --------------------------------------------- | :-------------: | :-------------: | :-------------: |
+| [chardet](https://github.com/chardet/chardet) |     1115 ms     |     300 ms      |      27 ms      |
+| charset-normalizer                            |     460 ms      |     240 ms      |      18 ms      |
 
 Chardet's performance on larger file (1MB+) are very poor. Expect huge difference on large payload.
 
@@ -65,17 +65,19 @@ Chardet's performance on larger file (1MB+) are very poor. Expect huge differenc
 > And yes, these results might change at any time. The dataset can be updated to include more files.
 > The actual delays heavily depends on your CPU capabilities. The factors should remain the same.
 
-[cchardet](https://github.com/PyYoshi/cChardet) is a non-native (cpp binding) and unmaintained faster alternative with 
+[cchardet](https://github.com/PyYoshi/cChardet) is a non-native (cpp binding) and unmaintained faster alternative with
 a better accuracy than chardet but lower than this package. If speed is the most important factor, you should try it.
 
 ## ✨ Installation
 
 Using PyPi for latest stable
+
 ```sh
 pip install charset-normalizer -U
 ```
 
 If you want a more up-to-date `unicodedata` than the one available in your Python setup.
+
 ```sh
 pip install charset-normalizer[unicode_backport] -U
 ```
@@ -83,6 +85,7 @@ pip install charset-normalizer[unicode_backport] -U
 ## 🚀 Basic Usage
 
 ### CLI
+
 This package comes with a CLI.
 
 ```
@@ -124,39 +127,35 @@ normalizer ./data/sample.1.fr.srt
 
 ```json
 {
-    "path": "/home/default/projects/charset_normalizer/data/sample.1.fr.srt",
-    "encoding": "cp1252",
-    "encoding_aliases": [
-        "1252",
-        "windows_1252"
-    ],
-    "alternative_encodings": [
-        "cp1254",
-        "cp1256",
-        "cp1258",
-        "iso8859_14",
-        "iso8859_15",
-        "iso8859_16",
-        "iso8859_3",
-        "iso8859_9",
-        "latin_1",
-        "mbcs"
-    ],
-    "language": "French",
-    "alphabets": [
-        "Basic Latin",
-        "Latin-1 Supplement"
-    ],
-    "has_sig_or_bom": false,
-    "chaos": 0.149,
-    "coherence": 97.152,
-    "unicode_path": null,
-    "is_preferred": true
+  "path": "/home/default/projects/charset_normalizer/data/sample.1.fr.srt",
+  "encoding": "cp1252",
+  "encoding_aliases": ["1252", "windows_1252"],
+  "alternative_encodings": [
+    "cp1254",
+    "cp1256",
+    "cp1258",
+    "iso8859_14",
+    "iso8859_15",
+    "iso8859_16",
+    "iso8859_3",
+    "iso8859_9",
+    "latin_1",
+    "mbcs"
+  ],
+  "language": "French",
+  "alphabets": ["Basic Latin", "Latin-1 Supplement"],
+  "has_sig_or_bom": false,
+  "chaos": 0.149,
+  "coherence": 97.152,
+  "unicode_path": null,
+  "is_preferred": true
 }
 ```
 
 ### Python
-*Just print out normalized text*
+
+_Just print out normalized text_
+
 ```python
 from charset_normalizer import from_path
 
@@ -165,7 +164,8 @@ results = from_path('./my_subtitle.srt')
 print(str(results.best()))
 ```
 
-*Normalize any text file*
+_Normalize any text file_
+
 ```python
 from charset_normalizer import normalize
 try:
@@ -174,7 +174,8 @@ except IOError as e:
     print('Sadly, we are unable to perform charset normalization.', str(e))
 ```
 
-*Upgrade your code without effort*
+_Upgrade your code without effort_
+
 ```python
 from charset_normalizer import detect
 ```
@@ -190,7 +191,7 @@ reliable alternative using a completely different method. Also! I never back dow
 
 I **don't care** about the **originating charset** encoding, because **two different tables** can
 produce **two identical rendered string.**
-What I want is to get readable text, the best I can. 
+What I want is to get readable text, the best I can.
 
 In a way, **I'm brute forcing text decoding.** How cool is that ? 😎
 
@@ -198,25 +199,25 @@ Don't confuse package **ftfy** with charset-normalizer or chardet. ftfy goal is 
 
 ## 🍰 How
 
-  - Discard all charset encoding table that could not fit the binary content.
-  - Measure chaos, or the mess once opened (by chunks) with a corresponding charset encoding.
-  - Extract matches with the lowest mess detected.
-  - Additionally, we measure coherence / probe for a language.
+- Discard all charset encoding table that could not fit the binary content.
+- Measure chaos, or the mess once opened (by chunks) with a corresponding charset encoding.
+- Extract matches with the lowest mess detected.
+- Additionally, we measure coherence / probe for a language.
 
 **Wait a minute**, what is chaos/mess and coherence according to **YOU ?**
 
-*Chaos :* I opened hundred of text files, **written by humans**, with the wrong encoding table. **I observed**, then
+_Chaos :_ I opened hundred of text files, **written by humans**, with the wrong encoding table. **I observed**, then
 **I established** some ground rules about **what is obvious** when **it seems like** a mess.
- I know that my interpretation of what is chaotic is very subjective, feel free to contribute in order to
- improve or rewrite it.
+I know that my interpretation of what is chaotic is very subjective, feel free to contribute in order to
+improve or rewrite it.
 
-*Coherence :* For each language there is on earth, we have computed ranked letter appearance occurrences (the best we can). So I thought
+_Coherence :_ For each language there is on earth, we have computed ranked letter appearance occurrences (the best we can). So I thought
 that intel is worth something here. So I use those records against decoded text to check if I can detect intelligent design.
 
 ## ⚡ Known limitations
 
-  - Language detection is unreliable when text contains two or more languages sharing identical letters. (eg. HTML (english tags) + Turkish content (Sharing Latin characters))
-  - Every charset detector heavily depends on sufficient content. In common cases, do not bother run detection on very tiny content.
+- Language detection is unreliable when text contains two or more languages sharing identical letters. (eg. HTML (english tags) + Turkish content (Sharing Latin characters))
+- Every charset detector heavily depends on sufficient content. In common cases, do not bother run detection on very tiny content.
 
 ## 👤 Contributing
 

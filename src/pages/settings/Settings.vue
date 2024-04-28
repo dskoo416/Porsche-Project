@@ -9,7 +9,6 @@
       <h3 class="h3">General preferences</h3>
       <LanguageSwitcher />
     </div>
-
   </div>
 </template>
 <script lang="ts" setup>

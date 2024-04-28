@@ -33,7 +33,8 @@ import VaTimelineItem from '../../../../components/va-timeline-item.vue'
             <RouterLink class="va-link font-semibold" to="/users">Andrew Bui</RouterLink> was added to the group
           </VaTimelineItem>
           <VaTimelineItem date="Nov 15, 2023">
-            Project <RouterLink class="va-link font-semibold" to="/projects">Predictive Plant Control</RouterLink> was created
+            Project <RouterLink class="va-link font-semibold" to="/projects">Predictive Plant Control</RouterLink> was
+            created
           </VaTimelineItem>
         </tbody>
       </table>

@@ -1,7 +1,18 @@
 runtime: nodejs20
-env: flex
-manual_scaling:
-  instances: 1
 
-network:
-  session_affinity: true
+handlers:
+  # Serve all static files with automatic gzip compression.
+  - url: /(.*\.(json|ico|css|js|gif|jpg|png|svg|woff|woff2|ttf|eot|webmanifest))$
+    static_files: dist/\1
+    upload: dist/.*\.(json|ico|css|js|gif|jpg|png|svg|woff|woff2|ttf|eot|webmanifest)$
+    secure: always
+    http_headers:
+      Cache-Control: public, max-age=31536000
+      Access-Control-Allow-Origin: "*"
+      Access-Control-Allow-Methods: "GET, OPTIONS"
+      Access-Control-Allow-Headers: "Authorization, Content-Type"
+  # Serve index.html for all routes.
+  - url: /.*
+    static_files: dist/index.html
+    upload: dist/index.html
+    secure: always

@@ -2,26 +2,39 @@
 
 <!-- CSS Adjustments (I'm very picky.) -->
 <style type="text/css">
-
   /* Rezzy requires precise alignment. */
-  img.logo {margin-left: -20px!important;}
+  img.logo {
+    margin-left: -20px !important;
+  }
 
   /* "Quick Search" should be capitalized. */
-  div#searchbox h3 {text-transform: capitalize;}
+  div#searchbox h3 {
+    text-transform: capitalize;
+  }
 
   /* Make the document a little wider, less code is cut-off. */
-  div.document {width: 1008px;}
+  div.document {
+    width: 1008px;
+  }
 
   /* Much-improved spacing around code blocks. */
-  div.highlight pre {padding: 11px 14px;}
+  div.highlight pre {
+    padding: 11px 14px;
+  }
 
   /* Remain Responsive! */
   @media screen and (max-width: 1008px) {
-    div.sphinxsidebar {display: none;}
-    div.document {width: 100%!important;}
+    div.sphinxsidebar {
+      display: none;
+    }
+    div.document {
+      width: 100% !important;
+    }
 
     /* Have code blocks escape the document right-margin. */
-    div.highlight pre {margin-right: -30px;}
+    div.highlight pre {
+      margin-right: -30px;
+    }
   }
 </style>
 
@@ -29,14 +42,12 @@
 
 <script type="text/javascript" src="//m.servedby-buysellads.com/monetization.js"></script>
 
-<div id="native-ribbon">
-</div>
+<div id="native-ribbon"></div>
 
 <script>
-_bsa.init('custom', 'CK7D62JU', 'placement:pythonrequestsorg',
-    {
-      target: '#native-ribbon',
-      template: `
+  _bsa.init('custom', 'CK7D62JU', 'placement:pythonrequestsorg', {
+    target: '#native-ribbon',
+    template: `
 <div class="native-sponsor">Sponsored by ##company## — Learn More</div>
   <a href="##link##" class="native-flex">
     <style>
@@ -74,7 +85,6 @@ _bsa.init('custom', 'CK7D62JU', 'placement:pythonrequestsorg',
     <span class="native-cta">##callToAction##</span>
   </a>
 </div>
-`
-    }
-  );
+`,
+  })
 </script>

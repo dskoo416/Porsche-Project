@@ -3,11 +3,7 @@
   "merge": {
     "pagination": {
       "ListRecommendationSummaries": {
-        "non_aggregate_keys": [
-          "groupBy",
-          "currencyCode",
-          "estimatedTotalDedupedSavings"
-        ]
+        "non_aggregate_keys": ["groupBy", "currencyCode", "estimatedTotalDedupedSavings"]
       }
     }
   }

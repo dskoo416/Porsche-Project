@@ -79,14 +79,8 @@
   "parameters": {
     "$.xgafv": {
       "description": "V1 error format.",
-      "enum": [
-        "1",
-        "2"
-      ],
-      "enumDescriptions": [
-        "v1 error format",
-        "v2 error format"
-      ],
+      "enum": ["1", "2"],
+      "enumDescriptions": ["v1 error format", "v2 error format"],
       "location": "query",
       "type": "string"
     },
@@ -98,11 +92,7 @@
     "alt": {
       "default": "json",
       "description": "Data format for response.",
-      "enum": [
-        "json",
-        "media",
-        "proto"
-      ],
+      "enum": ["json", "media", "proto"],
       "enumDescriptions": [
         "Responses with Content-Type of application/json",
         "Media download with context-dependent Content-Type",
@@ -162,10 +152,7 @@
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}",
           "httpMethod": "DELETE",
           "id": "bigquery.datasets.delete",
-          "parameterOrder": [
-            "projectId",
-            "datasetId"
-          ],
+          "parameterOrder": ["projectId", "datasetId"],
           "parameters": {
             "datasetId": {
               "description": "Required. Dataset ID of dataset being deleted",
@@ -188,20 +175,14 @@
             }
           },
           "path": "projects/{+projectId}/datasets/{+datasetId}",
-          "scopes": [
-            "https://www.googleapis.com/auth/bigquery",
-            "https://www.googleapis.com/auth/cloud-platform"
-          ]
+          "scopes": ["https://www.googleapis.com/auth/bigquery", "https://www.googleapis.com/auth/cloud-platform"]
         },
         "get": {
           "description": "Returns the dataset specified by datasetID.",
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}",
           "httpMethod": "GET",
           "id": "bigquery.datasets.get",
-          "parameterOrder": [
-            "projectId",
-            "datasetId"
-          ],
+          "parameterOrder": ["projectId", "datasetId"],
           "parameters": {
             "datasetId": {
               "description": "Required. Dataset ID of the requested dataset",
@@ -212,12 +193,7 @@
             },
             "datasetView": {
               "description": "Optional. Specifies the view that determines which dataset information is returned. By default, metadata and ACL information are returned.",
-              "enum": [
-                "DATASET_VIEW_UNSPECIFIED",
-                "METADATA",
-                "ACL",
-                "FULL"
-              ],
+              "enum": ["DATASET_VIEW_UNSPECIFIED", "METADATA", "ACL", "FULL"],
               "enumDescriptions": [
                 "The default value. Default to the FULL view.",
                 "Includes metadata information for the dataset, such as location, etag, lastModifiedTime, etc.",
@@ -250,9 +226,7 @@
           "flatPath": "projects/{projectsId}/datasets",
           "httpMethod": "POST",
           "id": "bigquery.datasets.insert",
-          "parameterOrder": [
-            "projectId"
-          ],
+          "parameterOrder": ["projectId"],
           "parameters": {
             "projectId": {
               "description": "Required. Project ID of the new dataset",
@@ -269,19 +243,14 @@
           "response": {
             "$ref": "Dataset"
           },
-          "scopes": [
-            "https://www.googleapis.com/auth/bigquery",
-            "https://www.googleapis.com/auth/cloud-platform"
-          ]
+          "scopes": ["https://www.googleapis.com/auth/bigquery", "https://www.googleapis.com/auth/cloud-platform"]
         },
         "list": {
           "description": "Lists all datasets in the specified project to which the user has been granted the READER dataset role.",
           "flatPath": "projects/{projectsId}/datasets",
           "httpMethod": "GET",
           "id": "bigquery.datasets.list",
-          "parameterOrder": [
-            "projectId"
-          ],
+          "parameterOrder": ["projectId"],
           "parameters": {
             "all": {
               "description": "Whether to list all datasets, including hidden ones",
@@ -327,10 +296,7 @@
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}",
           "httpMethod": "PATCH",
           "id": "bigquery.datasets.patch",
-          "parameterOrder": [
-            "projectId",
-            "datasetId"
-          ],
+          "parameterOrder": ["projectId", "datasetId"],
           "parameters": {
             "datasetId": {
               "description": "Required. Dataset ID of the dataset being updated",
@@ -354,20 +320,14 @@
           "response": {
             "$ref": "Dataset"
           },
-          "scopes": [
-            "https://www.googleapis.com/auth/bigquery",
-            "https://www.googleapis.com/auth/cloud-platform"
-          ]
+          "scopes": ["https://www.googleapis.com/auth/bigquery", "https://www.googleapis.com/auth/cloud-platform"]
         },
         "undelete": {
           "description": "Undeletes a dataset which is within time travel window based on datasetId. If a time is specified, the dataset version deleted at that time is undeleted, else the last live version is undeleted.",
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}:undelete",
           "httpMethod": "POST",
           "id": "bigquery.datasets.undelete",
-          "parameterOrder": [
-            "projectId",
-            "datasetId"
-          ],
+          "parameterOrder": ["projectId", "datasetId"],
           "parameters": {
             "datasetId": {
               "description": "Required. Dataset ID of dataset being deleted",
@@ -391,20 +351,14 @@
           "response": {
             "$ref": "Dataset"
           },
-          "scopes": [
-            "https://www.googleapis.com/auth/bigquery",
-            "https://www.googleapis.com/auth/cloud-platform"
-          ]
+          "scopes": ["https://www.googleapis.com/auth/bigquery", "https://www.googleapis.com/auth/cloud-platform"]
         },
         "update": {
           "description": "Updates information in an existing dataset. The update method replaces the entire dataset resource, whereas the patch method only replaces fields that are provided in the submitted dataset resource.",
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}",
           "httpMethod": "PUT",
           "id": "bigquery.datasets.update",
-          "parameterOrder": [
-            "projectId",
-            "datasetId"
-          ],
+          "parameterOrder": ["projectId", "datasetId"],
           "parameters": {
             "datasetId": {
               "description": "Required. Dataset ID of the dataset being updated",
@@ -428,10 +382,7 @@
           "response": {
             "$ref": "Dataset"
           },
-          "scopes": [
-            "https://www.googleapis.com/auth/bigquery",
-            "https://www.googleapis.com/auth/cloud-platform"
-          ]
+          "scopes": ["https://www.googleapis.com/auth/bigquery", "https://www.googleapis.com/auth/cloud-platform"]
         }
       }
     },
@@ -442,10 +393,7 @@
           "flatPath": "projects/{projectsId}/jobs/{jobsId}/cancel",
           "httpMethod": "POST",
           "id": "bigquery.jobs.cancel",
-          "parameterOrder": [
-            "projectId",
-            "jobId"
-          ],
+          "parameterOrder": ["projectId", "jobId"],
           "parameters": {
             "jobId": {
               "description": "Required. Job ID of the job to cancel",
@@ -471,20 +419,14 @@
           "response": {
             "$ref": "JobCancelResponse"
           },
-          "scopes": [
-            "https://www.googleapis.com/auth/bigquery",
-            "https://www.googleapis.com/auth/cloud-platform"
-          ]
+          "scopes": ["https://www.googleapis.com/auth/bigquery", "https://www.googleapis.com/auth/cloud-platform"]
         },
         "delete": {
           "description": "Requests the deletion of the metadata of a job. This call returns when the job's metadata is deleted.",
           "flatPath": "projects/{projectsId}/jobs/{jobsId}/delete",
           "httpMethod": "DELETE",
           "id": "bigquery.jobs.delete",
-          "parameterOrder": [
-            "projectId",
-            "jobId"
-          ],
+          "parameterOrder": ["projectId", "jobId"],
           "parameters": {
             "jobId": {
               "description": "Required. Job ID of the job for which metadata is to be deleted. If this is a parent job which has child jobs, the metadata from all child jobs will be deleted as well. Direct deletion of the metadata of child jobs is not allowed.",
@@ -507,20 +449,14 @@
             }
           },
           "path": "projects/{+projectId}/jobs/{+jobId}/delete",
-          "scopes": [
-            "https://www.googleapis.com/auth/bigquery",
-            "https://www.googleapis.com/auth/cloud-platform"
-          ]
+          "scopes": ["https://www.googleapis.com/auth/bigquery", "https://www.googleapis.com/auth/cloud-platform"]
         },
         "get": {
           "description": "Returns information about a specific job. Job information is available for a six month period after creation. Requires that you're the person who ran the job, or have the Is Owner project role.",
           "flatPath": "projects/{projectsId}/jobs/{jobsId}",
           "httpMethod": "GET",
           "id": "bigquery.jobs.get",
-          "parameterOrder": [
-            "projectId",
-            "jobId"
-          ],
+          "parameterOrder": ["projectId", "jobId"],
           "parameters": {
             "jobId": {
               "description": "Required. Job ID of the requested job.",
@@ -557,10 +493,7 @@
           "flatPath": "projects/{projectsId}/queries/{queriesId}",
           "httpMethod": "GET",
           "id": "bigquery.jobs.getQueryResults",
-          "parameterOrder": [
-            "projectId",
-            "jobId"
-          ],
+          "parameterOrder": ["projectId", "jobId"],
           "parameters": {
             "formatOptions.useInt64Timestamp": {
               "description": "Optional. Output timestamp as usec int64. Default is false.",
@@ -626,9 +559,7 @@
           "httpMethod": "POST",
           "id": "bigquery.jobs.insert",
           "mediaUpload": {
-            "accept": [
-              "*/*"
-            ],
+            "accept": ["*/*"],
             "protocols": {
               "resumable": {
                 "multipart": true,
@@ -640,9 +571,7 @@
               }
             }
           },
-          "parameterOrder": [
-            "projectId"
-          ],
+          "parameterOrder": ["projectId"],
           "parameters": {
             "projectId": {
               "description": "Project ID of project that will be billed for the job.",
@@ -673,9 +602,7 @@
           "flatPath": "projects/{projectsId}/jobs",
           "httpMethod": "GET",
           "id": "bigquery.jobs.list",
-          "parameterOrder": [
-            "projectId"
-          ],
+          "parameterOrder": ["projectId"],
           "parameters": {
             "allUsers": {
               "description": "Whether to display jobs owned by all users in the project. Default False.",
@@ -719,29 +646,15 @@
             },
             "projection": {
               "description": "Restrict information returned to a set of selected fields",
-              "enum": [
-                "full",
-                "minimal"
-              ],
-              "enumDescriptions": [
-                "Includes all job data",
-                "Does not include the job configuration"
-              ],
+              "enum": ["full", "minimal"],
+              "enumDescriptions": ["Includes all job data", "Does not include the job configuration"],
               "location": "query",
               "type": "string"
             },
             "stateFilter": {
               "description": "Filter for job state",
-              "enum": [
-                "done",
-                "pending",
-                "running"
-              ],
-              "enumDescriptions": [
-                "Finished jobs",
-                "Pending jobs",
-                "Running jobs"
-              ],
+              "enum": ["done", "pending", "running"],
+              "enumDescriptions": ["Finished jobs", "Pending jobs", "Running jobs"],
               "location": "query",
               "repeated": true,
               "type": "string"
@@ -762,9 +675,7 @@
           "flatPath": "projects/{projectsId}/queries",
           "httpMethod": "POST",
           "id": "bigquery.jobs.query",
-          "parameterOrder": [
-            "projectId"
-          ],
+          "parameterOrder": ["projectId"],
           "parameters": {
             "projectId": {
               "description": "Required. Project ID of the query request.",
@@ -796,11 +707,7 @@
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}/models/{modelsId}",
           "httpMethod": "DELETE",
           "id": "bigquery.models.delete",
-          "parameterOrder": [
-            "projectId",
-            "datasetId",
-            "modelId"
-          ],
+          "parameterOrder": ["projectId", "datasetId", "modelId"],
           "parameters": {
             "datasetId": {
               "description": "Required. Dataset ID of the model to delete.",
@@ -825,21 +732,14 @@
             }
           },
           "path": "projects/{+projectId}/datasets/{+datasetId}/models/{+modelId}",
-          "scopes": [
-            "https://www.googleapis.com/auth/bigquery",
-            "https://www.googleapis.com/auth/cloud-platform"
-          ]
+          "scopes": ["https://www.googleapis.com/auth/bigquery", "https://www.googleapis.com/auth/cloud-platform"]
         },
         "get": {
           "description": "Gets the specified model resource by model ID.",
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}/models/{modelsId}",
           "httpMethod": "GET",
           "id": "bigquery.models.get",
-          "parameterOrder": [
-            "projectId",
-            "datasetId",
-            "modelId"
-          ],
+          "parameterOrder": ["projectId", "datasetId", "modelId"],
           "parameters": {
             "datasetId": {
               "description": "Required. Dataset ID of the requested model.",
@@ -878,10 +778,7 @@
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}/models",
           "httpMethod": "GET",
           "id": "bigquery.models.list",
-          "parameterOrder": [
-            "projectId",
-            "datasetId"
-          ],
+          "parameterOrder": ["projectId", "datasetId"],
           "parameters": {
             "datasetId": {
               "description": "Required. Dataset ID of the models to list.",
@@ -924,11 +821,7 @@
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}/models/{modelsId}",
           "httpMethod": "PATCH",
           "id": "bigquery.models.patch",
-          "parameterOrder": [
-            "projectId",
-            "datasetId",
-            "modelId"
-          ],
+          "parameterOrder": ["projectId", "datasetId", "modelId"],
           "parameters": {
             "datasetId": {
               "description": "Required. Dataset ID of the model to patch.",
@@ -959,10 +852,7 @@
           "response": {
             "$ref": "Model"
           },
-          "scopes": [
-            "https://www.googleapis.com/auth/bigquery",
-            "https://www.googleapis.com/auth/cloud-platform"
-          ]
+          "scopes": ["https://www.googleapis.com/auth/bigquery", "https://www.googleapis.com/auth/cloud-platform"]
         }
       }
     },
@@ -973,9 +863,7 @@
           "flatPath": "projects/{projectsId}/serviceAccount",
           "httpMethod": "GET",
           "id": "bigquery.projects.getServiceAccount",
-          "parameterOrder": [
-            "projectId"
-          ],
+          "parameterOrder": ["projectId"],
           "parameters": {
             "projectId": {
               "description": "Required. ID of the project.",
@@ -1033,11 +921,7 @@
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}/routines/{routinesId}",
           "httpMethod": "DELETE",
           "id": "bigquery.routines.delete",
-          "parameterOrder": [
-            "projectId",
-            "datasetId",
-            "routineId"
-          ],
+          "parameterOrder": ["projectId", "datasetId", "routineId"],
           "parameters": {
             "datasetId": {
               "description": "Required. Dataset ID of the routine to delete",
@@ -1062,21 +946,14 @@
             }
           },
           "path": "projects/{+projectId}/datasets/{+datasetId}/routines/{+routineId}",
-          "scopes": [
-            "https://www.googleapis.com/auth/bigquery",
-            "https://www.googleapis.com/auth/cloud-platform"
-          ]
+          "scopes": ["https://www.googleapis.com/auth/bigquery", "https://www.googleapis.com/auth/cloud-platform"]
         },
         "get": {
           "description": "Gets the specified routine resource by routine ID.",
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}/routines/{routinesId}",
           "httpMethod": "GET",
           "id": "bigquery.routines.get",
-          "parameterOrder": [
-            "projectId",
-            "datasetId",
-            "routineId"
-          ],
+          "parameterOrder": ["projectId", "datasetId", "routineId"],
           "parameters": {
             "datasetId": {
               "description": "Required. Dataset ID of the requested routine",
@@ -1121,9 +998,7 @@
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}/routines/{routinesId}:getIamPolicy",
           "httpMethod": "POST",
           "id": "bigquery.routines.getIamPolicy",
-          "parameterOrder": [
-            "resource"
-          ],
+          "parameterOrder": ["resource"],
           "parameters": {
             "resource": {
               "description": "REQUIRED: The resource for which the policy is being requested. See [Resource names](https://cloud.google.com/apis/design/resource_names) for the appropriate value for this field.",
@@ -1151,10 +1026,7 @@
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}/routines",
           "httpMethod": "POST",
           "id": "bigquery.routines.insert",
-          "parameterOrder": [
-            "projectId",
-            "datasetId"
-          ],
+          "parameterOrder": ["projectId", "datasetId"],
           "parameters": {
             "datasetId": {
               "description": "Required. Dataset ID of the new routine",
@@ -1178,20 +1050,14 @@
           "response": {
             "$ref": "Routine"
           },
-          "scopes": [
-            "https://www.googleapis.com/auth/bigquery",
-            "https://www.googleapis.com/auth/cloud-platform"
-          ]
+          "scopes": ["https://www.googleapis.com/auth/bigquery", "https://www.googleapis.com/auth/cloud-platform"]
         },
         "list": {
           "description": "Lists all routines in the specified dataset. Requires the READER dataset role.",
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}/routines",
           "httpMethod": "GET",
           "id": "bigquery.routines.list",
-          "parameterOrder": [
-            "projectId",
-            "datasetId"
-          ],
+          "parameterOrder": ["projectId", "datasetId"],
           "parameters": {
             "datasetId": {
               "description": "Required. Dataset ID of the routines to list",
@@ -1245,9 +1111,7 @@
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}/routines/{routinesId}:setIamPolicy",
           "httpMethod": "POST",
           "id": "bigquery.routines.setIamPolicy",
-          "parameterOrder": [
-            "resource"
-          ],
+          "parameterOrder": ["resource"],
           "parameters": {
             "resource": {
               "description": "REQUIRED: The resource for which the policy is being specified. See [Resource names](https://cloud.google.com/apis/design/resource_names) for the appropriate value for this field.",
@@ -1264,21 +1128,14 @@
           "response": {
             "$ref": "Policy"
           },
-          "scopes": [
-            "https://www.googleapis.com/auth/bigquery",
-            "https://www.googleapis.com/auth/cloud-platform"
-          ]
+          "scopes": ["https://www.googleapis.com/auth/bigquery", "https://www.googleapis.com/auth/cloud-platform"]
         },
         "update": {
           "description": "Updates information in an existing routine. The update method replaces the entire Routine resource.",
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}/routines/{routinesId}",
           "httpMethod": "PUT",
           "id": "bigquery.routines.update",
-          "parameterOrder": [
-            "projectId",
-            "datasetId",
-            "routineId"
-          ],
+          "parameterOrder": ["projectId", "datasetId", "routineId"],
           "parameters": {
             "datasetId": {
               "description": "Required. Dataset ID of the routine to update",
@@ -1309,10 +1166,7 @@
           "response": {
             "$ref": "Routine"
           },
-          "scopes": [
-            "https://www.googleapis.com/auth/bigquery",
-            "https://www.googleapis.com/auth/cloud-platform"
-          ]
+          "scopes": ["https://www.googleapis.com/auth/bigquery", "https://www.googleapis.com/auth/cloud-platform"]
         }
       }
     },
@@ -1323,9 +1177,7 @@
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}/tables/{tablesId}/rowAccessPolicies/{rowAccessPoliciesId}:getIamPolicy",
           "httpMethod": "POST",
           "id": "bigquery.rowAccessPolicies.getIamPolicy",
-          "parameterOrder": [
-            "resource"
-          ],
+          "parameterOrder": ["resource"],
           "parameters": {
             "resource": {
               "description": "REQUIRED: The resource for which the policy is being requested. See [Resource names](https://cloud.google.com/apis/design/resource_names) for the appropriate value for this field.",
@@ -1353,11 +1205,7 @@
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}/tables/{tablesId}/rowAccessPolicies",
           "httpMethod": "GET",
           "id": "bigquery.rowAccessPolicies.list",
-          "parameterOrder": [
-            "projectId",
-            "datasetId",
-            "tableId"
-          ],
+          "parameterOrder": ["projectId", "datasetId", "tableId"],
           "parameters": {
             "datasetId": {
               "description": "Required. Dataset ID of row access policies to list.",
@@ -1407,9 +1255,7 @@
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}/tables/{tablesId}/rowAccessPolicies/{rowAccessPoliciesId}:testIamPermissions",
           "httpMethod": "POST",
           "id": "bigquery.rowAccessPolicies.testIamPermissions",
-          "parameterOrder": [
-            "resource"
-          ],
+          "parameterOrder": ["resource"],
           "parameters": {
             "resource": {
               "description": "REQUIRED: The resource for which the policy detail is being requested. See [Resource names](https://cloud.google.com/apis/design/resource_names) for the appropriate value for this field.",
@@ -1441,11 +1287,7 @@
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}/tables/{tablesId}/insertAll",
           "httpMethod": "POST",
           "id": "bigquery.tabledata.insertAll",
-          "parameterOrder": [
-            "projectId",
-            "datasetId",
-            "tableId"
-          ],
+          "parameterOrder": ["projectId", "datasetId", "tableId"],
           "parameters": {
             "datasetId": {
               "description": "Required. Dataset ID of the destination.",
@@ -1487,11 +1329,7 @@
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}/tables/{tablesId}/data",
           "httpMethod": "GET",
           "id": "bigquery.tabledata.list",
-          "parameterOrder": [
-            "projectId",
-            "datasetId",
-            "tableId"
-          ],
+          "parameterOrder": ["projectId", "datasetId", "tableId"],
           "parameters": {
             "datasetId": {
               "description": "Required. Dataset id of the table to list.",
@@ -1561,11 +1399,7 @@
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}/tables/{tablesId}",
           "httpMethod": "DELETE",
           "id": "bigquery.tables.delete",
-          "parameterOrder": [
-            "projectId",
-            "datasetId",
-            "tableId"
-          ],
+          "parameterOrder": ["projectId", "datasetId", "tableId"],
           "parameters": {
             "datasetId": {
               "description": "Required. Dataset ID of the table to delete",
@@ -1590,21 +1424,14 @@
             }
           },
           "path": "projects/{+projectId}/datasets/{+datasetId}/tables/{+tableId}",
-          "scopes": [
-            "https://www.googleapis.com/auth/bigquery",
-            "https://www.googleapis.com/auth/cloud-platform"
-          ]
+          "scopes": ["https://www.googleapis.com/auth/bigquery", "https://www.googleapis.com/auth/cloud-platform"]
         },
         "get": {
           "description": "Gets the specified table resource by table ID. This method does not return the data in the table, it only returns the table resource, which describes the structure of this table.",
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}/tables/{tablesId}",
           "httpMethod": "GET",
           "id": "bigquery.tables.get",
-          "parameterOrder": [
-            "projectId",
-            "datasetId",
-            "tableId"
-          ],
+          "parameterOrder": ["projectId", "datasetId", "tableId"],
           "parameters": {
             "datasetId": {
               "description": "Required. Dataset ID of the requested table",
@@ -1634,12 +1461,7 @@
             },
             "view": {
               "description": "Optional. Specifies the view that determines which table information is returned. By default, basic table information and storage statistics (STORAGE_STATS) are returned.",
-              "enum": [
-                "TABLE_METADATA_VIEW_UNSPECIFIED",
-                "BASIC",
-                "STORAGE_STATS",
-                "FULL"
-              ],
+              "enum": ["TABLE_METADATA_VIEW_UNSPECIFIED", "BASIC", "STORAGE_STATS", "FULL"],
               "enumDescriptions": [
                 "The default value. Default to the STORAGE_STATS view.",
                 "Includes basic table information including schema and partitioning specification. This view does not include storage statistics such as numRows or numBytes. This view is significantly more efficient and should be used to support high query rates.",
@@ -1665,9 +1487,7 @@
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}/tables/{tablesId}:getIamPolicy",
           "httpMethod": "POST",
           "id": "bigquery.tables.getIamPolicy",
-          "parameterOrder": [
-            "resource"
-          ],
+          "parameterOrder": ["resource"],
           "parameters": {
             "resource": {
               "description": "REQUIRED: The resource for which the policy is being requested. See [Resource names](https://cloud.google.com/apis/design/resource_names) for the appropriate value for this field.",
@@ -1695,10 +1515,7 @@
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}/tables",
           "httpMethod": "POST",
           "id": "bigquery.tables.insert",
-          "parameterOrder": [
-            "projectId",
-            "datasetId"
-          ],
+          "parameterOrder": ["projectId", "datasetId"],
           "parameters": {
             "datasetId": {
               "description": "Required. Dataset ID of the new table",
@@ -1722,20 +1539,14 @@
           "response": {
             "$ref": "Table"
           },
-          "scopes": [
-            "https://www.googleapis.com/auth/bigquery",
-            "https://www.googleapis.com/auth/cloud-platform"
-          ]
+          "scopes": ["https://www.googleapis.com/auth/bigquery", "https://www.googleapis.com/auth/cloud-platform"]
         },
         "list": {
           "description": "Lists all tables in the specified dataset. Requires the READER dataset role.",
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}/tables",
           "httpMethod": "GET",
           "id": "bigquery.tables.list",
-          "parameterOrder": [
-            "projectId",
-            "datasetId"
-          ],
+          "parameterOrder": ["projectId", "datasetId"],
           "parameters": {
             "datasetId": {
               "description": "Required. Dataset ID of the tables to list",
@@ -1778,11 +1589,7 @@
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}/tables/{tablesId}",
           "httpMethod": "PATCH",
           "id": "bigquery.tables.patch",
-          "parameterOrder": [
-            "projectId",
-            "datasetId",
-            "tableId"
-          ],
+          "parameterOrder": ["projectId", "datasetId", "tableId"],
           "parameters": {
             "autodetect_schema": {
               "description": "Optional.  When true will autodetect schema, else will keep original schema",
@@ -1818,19 +1625,14 @@
           "response": {
             "$ref": "Table"
           },
-          "scopes": [
-            "https://www.googleapis.com/auth/bigquery",
-            "https://www.googleapis.com/auth/cloud-platform"
-          ]
+          "scopes": ["https://www.googleapis.com/auth/bigquery", "https://www.googleapis.com/auth/cloud-platform"]
         },
         "setIamPolicy": {
           "description": "Sets the access control policy on the specified resource. Replaces any existing policy. Can return `NOT_FOUND`, `INVALID_ARGUMENT`, and `PERMISSION_DENIED` errors.",
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}/tables/{tablesId}:setIamPolicy",
           "httpMethod": "POST",
           "id": "bigquery.tables.setIamPolicy",
-          "parameterOrder": [
-            "resource"
-          ],
+          "parameterOrder": ["resource"],
           "parameters": {
             "resource": {
               "description": "REQUIRED: The resource for which the policy is being specified. See [Resource names](https://cloud.google.com/apis/design/resource_names) for the appropriate value for this field.",
@@ -1847,19 +1649,14 @@
           "response": {
             "$ref": "Policy"
           },
-          "scopes": [
-            "https://www.googleapis.com/auth/bigquery",
-            "https://www.googleapis.com/auth/cloud-platform"
-          ]
+          "scopes": ["https://www.googleapis.com/auth/bigquery", "https://www.googleapis.com/auth/cloud-platform"]
         },
         "testIamPermissions": {
           "description": "Returns permissions that a caller has on the specified resource. If the resource does not exist, this will return an empty set of permissions, not a `NOT_FOUND` error. Note: This operation is designed to be used for building permission-aware UIs and command-line tools, not for authorization checking. This operation may \"fail open\" without warning.",
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}/tables/{tablesId}:testIamPermissions",
           "httpMethod": "POST",
           "id": "bigquery.tables.testIamPermissions",
-          "parameterOrder": [
-            "resource"
-          ],
+          "parameterOrder": ["resource"],
           "parameters": {
             "resource": {
               "description": "REQUIRED: The resource for which the policy detail is being requested. See [Resource names](https://cloud.google.com/apis/design/resource_names) for the appropriate value for this field.",
@@ -1887,11 +1684,7 @@
           "flatPath": "projects/{projectsId}/datasets/{datasetsId}/tables/{tablesId}",
           "httpMethod": "PUT",
           "id": "bigquery.tables.update",
-          "parameterOrder": [
-            "projectId",
-            "datasetId",
-            "tableId"
-          ],
+          "parameterOrder": ["projectId", "datasetId", "tableId"],
           "parameters": {
             "autodetect_schema": {
               "description": "Optional.  When true will autodetect schema, else will keep original schema",
@@ -1927,10 +1720,7 @@
           "response": {
             "$ref": "Table"
           },
-          "scopes": [
-            "https://www.googleapis.com/auth/bigquery",
-            "https://www.googleapis.com/auth/cloud-platform"
-          ]
+          "scopes": ["https://www.googleapis.com/auth/bigquery", "https://www.googleapis.com/auth/cloud-platform"]
         }
       }
     }
@@ -2005,11 +1795,7 @@
       "properties": {
         "argumentKind": {
           "description": "Optional. Defaults to FIXED_TYPE.",
-          "enum": [
-            "ARGUMENT_KIND_UNSPECIFIED",
-            "FIXED_TYPE",
-            "ANY_TYPE"
-          ],
+          "enum": ["ARGUMENT_KIND_UNSPECIFIED", "FIXED_TYPE", "ANY_TYPE"],
           "enumDescriptions": [
             "Default value.",
             "The argument is a variable with fully specified type, which can be a struct or an array, but not a table.",
@@ -2027,12 +1813,7 @@
         },
         "mode": {
           "description": "Optional. Specifies whether the argument is input or output. Can be set for procedures only.",
-          "enum": [
-            "MODE_UNSPECIFIED",
-            "IN",
-            "OUT",
-            "INOUT"
-          ],
+          "enum": ["MODE_UNSPECIFIED", "IN", "OUT", "INOUT"],
           "enumDescriptions": [
             "Default value.",
             "The argument is input-only.",
@@ -2400,12 +2181,7 @@
         },
         "logType": {
           "description": "The log type that this config enables.",
-          "enum": [
-            "LOG_TYPE_UNSPECIFIED",
-            "ADMIN_READ",
-            "DATA_WRITE",
-            "DATA_READ"
-          ],
+          "enum": ["LOG_TYPE_UNSPECIFIED", "ADMIN_READ", "DATA_WRITE", "DATA_READ"],
           "enumDescriptions": [
             "Default case. Should never be this.",
             "Admin reads. Example: CloudIAM getIamPolicy",
@@ -2488,12 +2264,7 @@
         },
         "biEngineMode": {
           "description": "Output only. Specifies which mode of BI Engine acceleration was performed (if any).",
-          "enum": [
-            "ACCELERATION_MODE_UNSPECIFIED",
-            "DISABLED",
-            "PARTIAL",
-            "FULL"
-          ],
+          "enum": ["ACCELERATION_MODE_UNSPECIFIED", "DISABLED", "PARTIAL", "FULL"],
           "enumDescriptions": [
             "BiEngineMode type not specified.",
             "BI Engine disabled the acceleration. bi_engine_reasons specifies a more detailed reason.",
@@ -2523,14 +2294,8 @@
         },
         "fileFormat": {
           "description": "Required. The file format the table data is stored in.",
-          "enum": [
-            "FILE_FORMAT_UNSPECIFIED",
-            "PARQUET"
-          ],
-          "enumDescriptions": [
-            "Default Value.",
-            "Apache Parquet format."
-          ],
+          "enum": ["FILE_FORMAT_UNSPECIFIED", "PARQUET"],
+          "enumDescriptions": ["Default Value.", "Apache Parquet format."],
           "type": "string"
         },
         "storageUri": {
@@ -2539,14 +2304,8 @@
         },
         "tableFormat": {
           "description": "Required. The table format the metadata only snapshots are stored in.",
-          "enum": [
-            "TABLE_FORMAT_UNSPECIFIED",
-            "ICEBERG"
-          ],
-          "enumDescriptions": [
-            "Default Value.",
-            "Apache Iceberg format."
-          ],
+          "enum": ["TABLE_FORMAT_UNSPECIFIED", "ICEBERG"],
+          "enumDescriptions": ["Default Value.", "Apache Iceberg format."],
           "type": "string"
         }
       },
@@ -3169,11 +2928,7 @@
         },
         "defaultRoundingMode": {
           "description": "Optional. Defines the default rounding mode specification of new tables created within this dataset. During table creation, if this field is specified, the table within this dataset will inherit the default rounding mode of the dataset. Setting the default rounding mode on a table overrides this option. Existing tables in the dataset are unaffected. If columns are defined during that table creation, they will immediately inherit the table's default rounding mode, unless otherwise specified.",
-          "enum": [
-            "ROUNDING_MODE_UNSPECIFIED",
-            "ROUND_HALF_AWAY_FROM_ZERO",
-            "ROUND_HALF_EVEN"
-          ],
+          "enum": ["ROUNDING_MODE_UNSPECIFIED", "ROUND_HALF_AWAY_FROM_ZERO", "ROUND_HALF_EVEN"],
           "enumDescriptions": [
             "Unspecified will default to using ROUND_HALF_AWAY_FROM_ZERO.",
             "ROUND_HALF_AWAY_FROM_ZERO rounds half values away from zero when applying precision and scale upon writing of NUMERIC and BIGNUMERIC values. For Scale: 0 1.1, 1.2, 1.3, 1.4 => 1 1.5, 1.6, 1.7, 1.8, 1.9 => 2",
@@ -3275,16 +3030,8 @@
         },
         "storageBillingModel": {
           "description": "Optional. Updates storage_billing_model for the dataset.",
-          "enum": [
-            "STORAGE_BILLING_MODEL_UNSPECIFIED",
-            "LOGICAL",
-            "PHYSICAL"
-          ],
-          "enumDescriptions": [
-            "Value not set.",
-            "Billing for logical bytes.",
-            "Billing for physical bytes."
-          ],
+          "enum": ["STORAGE_BILLING_MODEL_UNSPECIFIED", "LOGICAL", "PHYSICAL"],
+          "enumDescriptions": ["Value not set.", "Billing for logical bytes.", "Billing for physical bytes."],
           "type": "string"
         },
         "tags": {
@@ -3325,11 +3072,7 @@
         "targetTypes": {
           "description": "Which resources in the dataset this entry applies to. Currently, only views are supported, but additional target types may be added in the future.",
           "items": {
-            "enum": [
-              "TARGET_TYPE_UNSPECIFIED",
-              "VIEWS",
-              "ROUTINES"
-            ],
+            "enum": ["TARGET_TYPE_UNSPECIFIED", "VIEWS", "ROUTINES"],
             "enumDescriptions": [
               "Do not use. You must set a target type explicitly.",
               "This entry applies to views in the dataset.",
@@ -3664,11 +3407,7 @@
         },
         "computeMode": {
           "description": "Output only. Compute mode for this stage.",
-          "enum": [
-            "COMPUTE_MODE_UNSPECIFIED",
-            "BIGQUERY",
-            "BI_ENGINE"
-          ],
+          "enum": ["COMPUTE_MODE_UNSPECIFIED", "BIGQUERY", "BI_ENGINE"],
           "enumDescriptions": [
             "ComputeMode type not specified.",
             "This stage was processed using BigQuery slots.",
@@ -3972,12 +3711,7 @@
         "decimalTargetTypes": {
           "description": "Defines the list of possible SQL data types to which the source decimal values are converted. This list and the precision and the scale parameters of the decimal field determine the target type. In the order of NUMERIC, BIGNUMERIC, and STRING, a type is picked if it is in the specified list and if it supports the precision and the scale. STRING supports all precision and scale values. If none of the listed types supports the precision and the scale, the type supporting the widest range in the specified list is picked, and if a value exceeds the supported range when reading the data, an error will be thrown. Example: Suppose the value of this field is [\"NUMERIC\", \"BIGNUMERIC\"]. If (precision,scale) is: * (38,9) -> NUMERIC; * (39,9) -> BIGNUMERIC (NUMERIC cannot hold 30 integer digits); * (38,10) -> BIGNUMERIC (NUMERIC cannot hold 10 fractional digits); * (76,38) -> BIGNUMERIC; * (77,38) -> BIGNUMERIC (error if value exeeds supported range). This field cannot contain duplicate types. The order of the types in this field is ignored. For example, [\"BIGNUMERIC\", \"NUMERIC\"] is the same as [\"NUMERIC\", \"BIGNUMERIC\"] and NUMERIC always takes precedence over BIGNUMERIC. Defaults to [\"NUMERIC\", \"STRING\"] for ORC and [\"NUMERIC\"] for the other file formats.",
           "items": {
-            "enum": [
-              "DECIMAL_TARGET_TYPE_UNSPECIFIED",
-              "NUMERIC",
-              "BIGNUMERIC",
-              "STRING"
-            ],
+            "enum": ["DECIMAL_TARGET_TYPE_UNSPECIFIED", "NUMERIC", "BIGNUMERIC", "STRING"],
             "enumDescriptions": [
               "Invalid type.",
               "Decimal values could be converted to NUMERIC type.",
@@ -3990,10 +3724,7 @@
         },
         "fileSetSpecType": {
           "description": "Optional. Specifies how source URIs are interpreted for constructing the file set to load. By default source URIs are expanded against the underlying storage. Other options include specifying manifest files. Only applicable to object storage systems.",
-          "enum": [
-            "FILE_SET_SPEC_TYPE_FILE_SYSTEM_MATCH",
-            "FILE_SET_SPEC_TYPE_NEW_LINE_DELIMITED_MANIFEST"
-          ],
+          "enum": ["FILE_SET_SPEC_TYPE_FILE_SYSTEM_MATCH", "FILE_SET_SPEC_TYPE_NEW_LINE_DELIMITED_MANIFEST"],
           "enumDescriptions": [
             "This option expands source URIs by listing files from the object store. It is the default behavior if FileSetSpecType is not set.",
             "This option indicates that the provided URIs are newline-delimited manifest files, with one URI per line. Wildcard URIs are not supported."
@@ -4014,10 +3745,7 @@
         },
         "jsonExtension": {
           "description": "Optional. Load option to be used together with source_format newline-delimited JSON to indicate that a variant of JSON is being loaded. To load newline-delimited GeoJSON, specify GEOJSON (and source_format must be set to NEWLINE_DELIMITED_JSON).",
-          "enum": [
-            "JSON_EXTENSION_UNSPECIFIED",
-            "GEOJSON"
-          ],
+          "enum": ["JSON_EXTENSION_UNSPECIFIED", "GEOJSON"],
           "enumDescriptions": [
             "The default if provided value is not one included in the enum, or the value is not specified. The source formate is parsed without any modification.",
             "Use GeoJSON variant of JSON. See https://tools.ietf.org/html/rfc7946."
@@ -4035,11 +3763,7 @@
         },
         "metadataCacheMode": {
           "description": "Optional. Metadata Cache Mode for the table. Set this to enable caching of metadata from external data source.",
-          "enum": [
-            "METADATA_CACHE_MODE_UNSPECIFIED",
-            "AUTOMATIC",
-            "MANUAL"
-          ],
+          "enum": ["METADATA_CACHE_MODE_UNSPECIFIED", "AUTOMATIC", "MANUAL"],
           "enumDescriptions": [
             "Unspecified metadata cache mode.",
             "Set this mode to trigger automatic background refresh of metadata cache from the external source. Queries will use the latest available cache version within the table's maxStaleness interval.",
@@ -4049,16 +3773,8 @@
         },
         "objectMetadata": {
           "description": "Optional. ObjectMetadata is used to create Object Tables. Object Tables contain a listing of objects (with their metadata) found at the source_uris. If ObjectMetadata is set, source_format should be omitted. Currently SIMPLE is the only supported Object Metadata type.",
-          "enum": [
-            "OBJECT_METADATA_UNSPECIFIED",
-            "DIRECTORY",
-            "SIMPLE"
-          ],
-          "enumDescriptions": [
-            "Unspecified by default.",
-            "A synonym for `SIMPLE`.",
-            "Directory listing of objects."
-          ],
+          "enum": ["OBJECT_METADATA_UNSPECIFIED", "DIRECTORY", "SIMPLE"],
+          "enumDescriptions": ["Unspecified by default.", "A synonym for `SIMPLE`.", "Directory listing of objects."],
           "type": "string"
         },
         "parquetOptions": {
@@ -4934,12 +4650,7 @@
         "decimalTargetTypes": {
           "description": "Defines the list of possible SQL data types to which the source decimal values are converted. This list and the precision and the scale parameters of the decimal field determine the target type. In the order of NUMERIC, BIGNUMERIC, and STRING, a type is picked if it is in the specified list and if it supports the precision and the scale. STRING supports all precision and scale values. If none of the listed types supports the precision and the scale, the type supporting the widest range in the specified list is picked, and if a value exceeds the supported range when reading the data, an error will be thrown. Example: Suppose the value of this field is [\"NUMERIC\", \"BIGNUMERIC\"]. If (precision,scale) is: * (38,9) -> NUMERIC; * (39,9) -> BIGNUMERIC (NUMERIC cannot hold 30 integer digits); * (38,10) -> BIGNUMERIC (NUMERIC cannot hold 10 fractional digits); * (76,38) -> BIGNUMERIC; * (77,38) -> BIGNUMERIC (error if value exeeds supported range). This field cannot contain duplicate types. The order of the types in this field is ignored. For example, [\"BIGNUMERIC\", \"NUMERIC\"] is the same as [\"NUMERIC\", \"BIGNUMERIC\"] and NUMERIC always takes precedence over BIGNUMERIC. Defaults to [\"NUMERIC\", \"STRING\"] for ORC and [\"NUMERIC\"] for the other file formats.",
           "items": {
-            "enum": [
-              "DECIMAL_TARGET_TYPE_UNSPECIFIED",
-              "NUMERIC",
-              "BIGNUMERIC",
-              "STRING"
-            ],
+            "enum": ["DECIMAL_TARGET_TYPE_UNSPECIFIED", "NUMERIC", "BIGNUMERIC", "STRING"],
             "enumDescriptions": [
               "Invalid type.",
               "Decimal values could be converted to NUMERIC type.",
@@ -4972,10 +4683,7 @@
         },
         "fileSetSpecType": {
           "description": "Optional. Specifies how source URIs are interpreted for constructing the file set to load. By default, source URIs are expanded against the underlying storage. You can also specify manifest files to control how the file set is constructed. This option is only applicable to object storage systems.",
-          "enum": [
-            "FILE_SET_SPEC_TYPE_FILE_SYSTEM_MATCH",
-            "FILE_SET_SPEC_TYPE_NEW_LINE_DELIMITED_MANIFEST"
-          ],
+          "enum": ["FILE_SET_SPEC_TYPE_FILE_SYSTEM_MATCH", "FILE_SET_SPEC_TYPE_NEW_LINE_DELIMITED_MANIFEST"],
           "enumDescriptions": [
             "This option expands source URIs by listing files from the object store. It is the default behavior if FileSetSpecType is not set.",
             "This option indicates that the provided URIs are newline-delimited manifest files, with one URI per line. Wildcard URIs are not supported."
@@ -4992,10 +4700,7 @@
         },
         "jsonExtension": {
           "description": "Optional. Load option to be used together with source_format newline-delimited JSON to indicate that a variant of JSON is being loaded. To load newline-delimited GeoJSON, specify GEOJSON (and source_format must be set to NEWLINE_DELIMITED_JSON).",
-          "enum": [
-            "JSON_EXTENSION_UNSPECIFIED",
-            "GEOJSON"
-          ],
+          "enum": ["JSON_EXTENSION_UNSPECIFIED", "GEOJSON"],
           "enumDescriptions": [
             "The default if provided value is not one included in the enum, or the value is not specified. The source formate is parsed without any modification.",
             "Use GeoJSON variant of JSON. See https://tools.ietf.org/html/rfc7946."
@@ -5251,13 +4956,7 @@
         },
         "operationType": {
           "description": "Optional. Supported operation types in table copy job.",
-          "enum": [
-            "OPERATION_TYPE_UNSPECIFIED",
-            "COPY",
-            "SNAPSHOT",
-            "RESTORE",
-            "CLONE"
-          ],
+          "enum": ["OPERATION_TYPE_UNSPECIFIED", "COPY", "SNAPSHOT", "RESTORE", "CLONE"],
           "enumDescriptions": [
             "Unspecified operation type.",
             "The source and destination table have the same table type.",
@@ -5291,13 +4990,7 @@
       "properties": {
         "code": {
           "description": "Output only. Specifies the high level reason why a Job was created.",
-          "enum": [
-            "CODE_UNSPECIFIED",
-            "REQUESTED",
-            "LONG_RUNNING",
-            "LARGE_RESULTS",
-            "OTHER"
-          ],
+          "enum": ["CODE_UNSPECIFIED", "REQUESTED", "LONG_RUNNING", "LARGE_RESULTS", "OTHER"],
           "enumDescriptions": [
             "Reason is not specified.",
             "Job creation was requested.",
@@ -5947,13 +5640,7 @@
         },
         "joinCondition": {
           "description": "Optional. Specifies if a join is required or not on queries for the view. Default is JOIN_CONDITION_UNSPECIFIED.",
-          "enum": [
-            "JOIN_CONDITION_UNSPECIFIED",
-            "JOIN_ANY",
-            "JOIN_ALL",
-            "JOIN_NOT_REQUIRED",
-            "JOIN_BLOCKED"
-          ],
+          "enum": ["JOIN_CONDITION_UNSPECIFIED", "JOIN_ANY", "JOIN_ALL", "JOIN_NOT_REQUIRED", "JOIN_BLOCKED"],
           "enumDescriptions": [
             "A join is neither required nor restricted on any column. Default value.",
             "A join is required on at least one of the specified columns.",
@@ -5995,11 +5682,7 @@
       "properties": {
         "linkState": {
           "description": "Output only. Specifies whether Linked Dataset is currently in a linked state or not.",
-          "enum": [
-            "LINK_STATE_UNSPECIFIED",
-            "LINKED",
-            "UNLINKED"
-          ],
+          "enum": ["LINK_STATE_UNSPECIFIED", "LINKED", "UNLINKED"],
           "enumDescriptions": [
             "The default value. Default to the LINKED state.",
             "Normal Linked Dataset state. Data is queryable via the Linked Dataset.",
@@ -6348,11 +6031,7 @@
         },
         "trainingType": {
           "description": "Output only. Training type of the job.",
-          "enum": [
-            "TRAINING_TYPE_UNSPECIFIED",
-            "SINGLE_TRAINING",
-            "HPARAM_TUNING"
-          ],
+          "enum": ["TRAINING_TYPE_UNSPECIFIED", "SINGLE_TRAINING", "HPARAM_TUNING"],
           "enumDescriptions": [
             "Unspecified training type.",
             "Single training with fixed parameter space.",
@@ -6641,10 +6320,7 @@
         },
         "mapTargetType": {
           "description": "Optional. Will indicate how to represent a parquet map if present.",
-          "enum": [
-            "MAP_TARGET_TYPE_UNSPECIFIED",
-            "ARRAY_OF_STRUCT"
-          ],
+          "enum": ["MAP_TARGET_TYPE_UNSPECIFIED", "ARRAY_OF_STRUCT"],
           "enumDescriptions": [
             "In this mode, we fall back to the default. Currently (3/24) we represent the map as: struct map_field_name { repeated struct key_value { key value } }",
             "In this mode, we omit parquet's key_value struct and represent the map as: repeated struct map_field_name { key value }"
@@ -7007,11 +6683,7 @@
         },
         "jobCreationMode": {
           "description": "Optional. If not set, jobs are always required. If set, the query request will follow the behavior described JobCreationMode. This feature is not yet available. Jobs will always be created.",
-          "enum": [
-            "JOB_CREATION_MODE_UNSPECIFIED",
-            "JOB_CREATION_REQUIRED",
-            "JOB_CREATION_OPTIONAL"
-          ],
+          "enum": ["JOB_CREATION_MODE_UNSPECIFIED", "JOB_CREATION_REQUIRED", "JOB_CREATION_OPTIONAL"],
           "enumDescriptions": [
             "If unspecified JOB_CREATION_REQUIRED is the default.",
             "Default. Job creation is always required.",
@@ -7393,10 +7065,7 @@
       "properties": {
         "type": {
           "description": "Output only. Specifies the type of dataset/table restriction.",
-          "enum": [
-            "RESTRICTION_TYPE_UNSPECIFIED",
-            "RESTRICTED_DATA_EGRESS"
-          ],
+          "enum": ["RESTRICTION_TYPE_UNSPECIFIED", "RESTRICTED_DATA_EGRESS"],
           "enumDescriptions": [
             "Should never be used.",
             "Restrict data egress. See [Data egress](/bigquery/docs/analytics-hub-introduction#data_egress) for more details."
@@ -7426,14 +7095,8 @@
         },
         "dataGovernanceType": {
           "description": "Optional. If set to `DATA_MASKING`, the function is validated and made available as a masking function. For more information, see [Create custom masking routines](https://cloud.google.com/bigquery/docs/user-defined-functions#custom-mask).",
-          "enum": [
-            "DATA_GOVERNANCE_TYPE_UNSPECIFIED",
-            "DATA_MASKING"
-          ],
-          "enumDescriptions": [
-            "The data governance type is unspecified.",
-            "The data governance type is data masking."
-          ],
+          "enum": ["DATA_GOVERNANCE_TYPE_UNSPECIFIED", "DATA_MASKING"],
+          "enumDescriptions": ["The data governance type is unspecified.", "The data governance type is data masking."],
           "type": "string"
         },
         "definitionBody": {
@@ -7446,11 +7109,7 @@
         },
         "determinismLevel": {
           "description": "Optional. The determinism level of the JavaScript UDF, if defined.",
-          "enum": [
-            "DETERMINISM_LEVEL_UNSPECIFIED",
-            "DETERMINISTIC",
-            "NOT_DETERMINISTIC"
-          ],
+          "enum": ["DETERMINISM_LEVEL_UNSPECIFIED", "DETERMINISTIC", "NOT_DETERMINISTIC"],
           "enumDescriptions": [
             "The determinism of the UDF is unspecified.",
             "The UDF is deterministic, meaning that 2 function calls with the same inputs always produce the same result, even across 2 query runs.",
@@ -7472,14 +7131,7 @@
         },
         "language": {
           "description": "Optional. Defaults to \"SQL\" if remote_function_options field is absent, not set otherwise.",
-          "enum": [
-            "LANGUAGE_UNSPECIFIED",
-            "SQL",
-            "JAVASCRIPT",
-            "PYTHON",
-            "JAVA",
-            "SCALA"
-          ],
+          "enum": ["LANGUAGE_UNSPECIFIED", "SQL", "JAVASCRIPT", "PYTHON", "JAVA", "SCALA"],
           "enumDescriptions": [
             "Default value.",
             "SQL language.",
@@ -7532,11 +7184,7 @@
         },
         "securityMode": {
           "description": "Optional. The security mode of the routine, if defined. If not defined, the security mode is automatically determined from the routine's configuration.",
-          "enum": [
-            "SECURITY_MODE_UNSPECIFIED",
-            "DEFINER",
-            "INVOKER"
-          ],
+          "enum": ["SECURITY_MODE_UNSPECIFIED", "DEFINER", "INVOKER"],
           "enumDescriptions": [
             "The security mode of the routine is unspecified.",
             "The routine is to be executed with the privileges of the user who defines it.",
@@ -7664,11 +7312,7 @@
       "properties": {
         "keyResultStatement": {
           "description": "Determines which statement in the script represents the \"key result\", used to populate the schema and query results of the script job. Default is LAST.",
-          "enum": [
-            "KEY_RESULT_STATEMENT_KIND_UNSPECIFIED",
-            "LAST",
-            "FIRST_SELECT"
-          ],
+          "enum": ["KEY_RESULT_STATEMENT_KIND_UNSPECIFIED", "LAST", "FIRST_SELECT"],
           "enumDescriptions": [
             "Default value.",
             "The last result determines the key result.",
@@ -7736,11 +7380,7 @@
       "properties": {
         "evaluationKind": {
           "description": "Whether this child job was a statement or expression.",
-          "enum": [
-            "EVALUATION_KIND_UNSPECIFIED",
-            "STATEMENT",
-            "EXPRESSION"
-          ],
+          "enum": ["EVALUATION_KIND_UNSPECIFIED", "STATEMENT", "EXPRESSION"],
           "enumDescriptions": [
             "Default value.",
             "The statement appears directly in the script.",
@@ -7771,12 +7411,7 @@
         },
         "indexUsageMode": {
           "description": "Specifies the index usage mode for the query.",
-          "enum": [
-            "INDEX_USAGE_MODE_UNSPECIFIED",
-            "UNUSED",
-            "PARTIALLY_USED",
-            "FULLY_USED"
-          ],
+          "enum": ["INDEX_USAGE_MODE_UNSPECIFIED", "UNUSED", "PARTIALLY_USED", "FULLY_USED"],
           "enumDescriptions": [
             "Index usage mode not specified.",
             "No search indexes were used in the search query. See [`indexUnusedReasons`] (/bigquery/docs/reference/rest/v2/Job#IndexUnusedReason) for detailed reasons.",
@@ -8267,11 +7902,7 @@
         },
         "defaultRoundingMode": {
           "description": "Optional. Defines the default rounding mode specification of new decimal fields (NUMERIC OR BIGNUMERIC) in the table. During table creation or update, if a decimal field is added to this table without an explicit rounding mode specified, then the field inherits the table default rounding mode. Changing this field doesn't affect existing fields.",
-          "enum": [
-            "ROUNDING_MODE_UNSPECIFIED",
-            "ROUND_HALF_AWAY_FROM_ZERO",
-            "ROUND_HALF_EVEN"
-          ],
+          "enum": ["ROUNDING_MODE_UNSPECIFIED", "ROUND_HALF_AWAY_FROM_ZERO", "ROUND_HALF_EVEN"],
           "enumDescriptions": [
             "Unspecified will default to using ROUND_HALF_AWAY_FROM_ZERO.",
             "ROUND_HALF_AWAY_FROM_ZERO rounds half values away from zero when applying precision and scale upon writing of NUMERIC and BIGNUMERIC values. For Scale: 0 1.1, 1.2, 1.3, 1.4 => 1 1.5, 1.6, 1.7, 1.8, 1.9 => 2",
@@ -8771,11 +8402,7 @@
         },
         "roundingMode": {
           "description": "Optional. Specifies the rounding mode to be used when storing values of NUMERIC and BIGNUMERIC type.",
-          "enum": [
-            "ROUNDING_MODE_UNSPECIFIED",
-            "ROUND_HALF_AWAY_FROM_ZERO",
-            "ROUND_HALF_EVEN"
-          ],
+          "enum": ["ROUNDING_MODE_UNSPECIFIED", "ROUND_HALF_AWAY_FROM_ZERO", "ROUND_HALF_EVEN"],
           "enumDescriptions": [
             "Unspecified will default to using ROUND_HALF_AWAY_FROM_ZERO.",
             "ROUND_HALF_AWAY_FROM_ZERO rounds half values away from zero when applying precision and scale upon writing of NUMERIC and BIGNUMERIC values. For Scale: 0 1.1, 1.2, 1.3, 1.4 => 1 1.5, 1.6, 1.7, 1.8, 1.9 => 2",
@@ -9118,16 +8745,8 @@
         },
         "boosterType": {
           "description": "Booster type for boosted tree models.",
-          "enum": [
-            "BOOSTER_TYPE_UNSPECIFIED",
-            "GBTREE",
-            "DART"
-          ],
-          "enumDescriptions": [
-            "Unspecified booster type.",
-            "Gbtree booster.",
-            "Dart booster."
-          ],
+          "enum": ["BOOSTER_TYPE_UNSPECIFIED", "GBTREE", "DART"],
+          "enumDescriptions": ["Unspecified booster type.", "Gbtree booster.", "Dart booster."],
           "type": "string"
         },
         "budgetHours": {
@@ -9141,12 +8760,7 @@
         },
         "categoryEncodingMethod": {
           "description": "Categorical feature encoding method.",
-          "enum": [
-            "ENCODING_METHOD_UNSPECIFIED",
-            "ONE_HOT_ENCODING",
-            "LABEL_ENCODING",
-            "DUMMY_ENCODING"
-          ],
+          "enum": ["ENCODING_METHOD_UNSPECIFIED", "ONE_HOT_ENCODING", "LABEL_ENCODING", "DUMMY_ENCODING"],
           "enumDescriptions": [
             "Unspecified encoding method.",
             "Applies one-hot encoding.",
@@ -9161,22 +8775,8 @@
         },
         "colorSpace": {
           "description": "Enums for color space, used for processing images in Object Table. See more details at https://www.tensorflow.org/io/tutorials/colorspace.",
-          "enum": [
-            "COLOR_SPACE_UNSPECIFIED",
-            "RGB",
-            "HSV",
-            "YIQ",
-            "YUV",
-            "GRAYSCALE"
-          ],
-          "enumDescriptions": [
-            "Unspecified color space",
-            "RGB",
-            "HSV",
-            "YIQ",
-            "YUV",
-            "GRAYSCALE"
-          ],
+          "enum": ["COLOR_SPACE_UNSPECIFIED", "RGB", "HSV", "YIQ", "YUV", "GRAYSCALE"],
+          "enumDescriptions": ["Unspecified color space", "RGB", "HSV", "YIQ", "YUV", "GRAYSCALE"],
           "type": "string"
         },
         "colsampleBylevel": {
@@ -9196,11 +8796,7 @@
         },
         "dartNormalizeType": {
           "description": "Type of normalization algorithm for boosted tree models using dart booster.",
-          "enum": [
-            "DART_NORMALIZE_TYPE_UNSPECIFIED",
-            "TREE",
-            "FOREST"
-          ],
+          "enum": ["DART_NORMALIZE_TYPE_UNSPECIFIED", "TREE", "FOREST"],
           "enumDescriptions": [
             "Unspecified dart normalize type.",
             "New trees have the same weight of each of dropped trees.",
@@ -9245,14 +8841,7 @@
         },
         "dataSplitMethod": {
           "description": "The data split type for training and evaluation, e.g. RANDOM.",
-          "enum": [
-            "DATA_SPLIT_METHOD_UNSPECIFIED",
-            "RANDOM",
-            "CUSTOM",
-            "SEQUENTIAL",
-            "NO_SPLIT",
-            "AUTO_SPLIT"
-          ],
+          "enum": ["DATA_SPLIT_METHOD_UNSPECIFIED", "RANDOM", "CUSTOM", "SEQUENTIAL", "NO_SPLIT", "AUTO_SPLIT"],
           "enumDescriptions": [
             "Default value.",
             "Splits data randomly.",
@@ -9269,16 +8858,8 @@
         },
         "distanceType": {
           "description": "Distance type for clustering models.",
-          "enum": [
-            "DISTANCE_TYPE_UNSPECIFIED",
-            "EUCLIDEAN",
-            "COSINE"
-          ],
-          "enumDescriptions": [
-            "Default value.",
-            "Eculidean distance.",
-            "Cosine distance."
-          ],
+          "enum": ["DISTANCE_TYPE_UNSPECIFIED", "EUCLIDEAN", "COSINE"],
+          "enumDescriptions": ["Default value.", "Eculidean distance.", "Cosine distance."],
           "type": "string"
         },
         "dropout": {
@@ -9296,11 +8877,7 @@
         },
         "feedbackType": {
           "description": "Feedback type that specifies which algorithm to run for matrix factorization.",
-          "enum": [
-            "FEEDBACK_TYPE_UNSPECIFIED",
-            "IMPLICIT",
-            "EXPLICIT"
-          ],
+          "enum": ["FEEDBACK_TYPE_UNSPECIFIED", "IMPLICIT", "EXPLICIT"],
           "enumDescriptions": [
             "Default value.",
             "Use weighted-als for implicit feedback problems.",
@@ -9700,12 +9277,7 @@
         },
         "kmeansInitializationMethod": {
           "description": "The method used to initialize the centroids for kmeans algorithm.",
-          "enum": [
-            "KMEANS_INITIALIZATION_METHOD_UNSPECIFIED",
-            "RANDOM",
-            "CUSTOM",
-            "KMEANS_PLUS_PLUS"
-          ],
+          "enum": ["KMEANS_INITIALIZATION_METHOD_UNSPECIFIED", "RANDOM", "CUSTOM", "KMEANS_PLUS_PLUS"],
           "enumDescriptions": [
             "Unspecified initialization method.",
             "Initializes the centroids randomly.",
@@ -9744,11 +9316,7 @@
         },
         "learnRateStrategy": {
           "description": "The strategy to determine learn rate for the current iteration.",
-          "enum": [
-            "LEARN_RATE_STRATEGY_UNSPECIFIED",
-            "LINE_SEARCH",
-            "CONSTANT"
-          ],
+          "enum": ["LEARN_RATE_STRATEGY_UNSPECIFIED", "LINE_SEARCH", "CONSTANT"],
           "enumDescriptions": [
             "Default value.",
             "Use line search to determine learning rate.",
@@ -9758,11 +9326,7 @@
         },
         "lossType": {
           "description": "Type of loss function used during training run.",
-          "enum": [
-            "LOSS_TYPE_UNSPECIFIED",
-            "MEAN_SQUARED_LOSS",
-            "MEAN_LOG_LOSS"
-          ],
+          "enum": ["LOSS_TYPE_UNSPECIFIED", "MEAN_SQUARED_LOSS", "MEAN_LOG_LOSS"],
           "enumDescriptions": [
             "Default value.",
             "Mean squared loss, used for linear regression.",
@@ -9812,14 +9376,8 @@
         },
         "modelRegistry": {
           "description": "The model registry.",
-          "enum": [
-            "MODEL_REGISTRY_UNSPECIFIED",
-            "VERTEX_AI"
-          ],
-          "enumDescriptions": [
-            "Default value.",
-            "Vertex AI."
-          ],
+          "enum": ["MODEL_REGISTRY_UNSPECIFIED", "VERTEX_AI"],
+          "enumDescriptions": ["Default value.", "Vertex AI."],
           "type": "string"
         },
         "modelUri": {
@@ -9857,11 +9415,7 @@
         },
         "optimizationStrategy": {
           "description": "Optimization strategy for training linear regression models.",
-          "enum": [
-            "OPTIMIZATION_STRATEGY_UNSPECIFIED",
-            "BATCH_GRADIENT_DESCENT",
-            "NORMAL_EQUATION"
-          ],
+          "enum": ["OPTIMIZATION_STRATEGY_UNSPECIFIED", "BATCH_GRADIENT_DESCENT", "NORMAL_EQUATION"],
           "enumDescriptions": [
             "Default value.",
             "Uses an iterative batch gradient descent algorithm.",
@@ -9880,18 +9434,8 @@
         },
         "pcaSolver": {
           "description": "The solver for PCA.",
-          "enum": [
-            "UNSPECIFIED",
-            "FULL",
-            "RANDOMIZED",
-            "AUTO"
-          ],
-          "enumDescriptions": [
-            "Default value.",
-            "Full eigen-decoposition.",
-            "Randomized SVD.",
-            "Auto."
-          ],
+          "enum": ["UNSPECIFIED", "FULL", "RANDOMIZED", "AUTO"],
+          "enumDescriptions": ["Default value.", "Full eigen-decoposition.", "Randomized SVD.", "Auto."],
           "type": "string"
         },
         "sampledShapleyNumPaths": {
@@ -9942,13 +9486,7 @@
         },
         "treeMethod": {
           "description": "Tree construction algorithm for boosted tree models.",
-          "enum": [
-            "TREE_METHOD_UNSPECIFIED",
-            "AUTO",
-            "EXACT",
-            "APPROX",
-            "HIST"
-          ],
+          "enum": ["TREE_METHOD_UNSPECIFIED", "AUTO", "EXACT", "APPROX", "HIST"],
           "enumDescriptions": [
             "Unspecified tree method.",
             "Use heuristic to choose the fastest method.",
@@ -10129,12 +9667,7 @@
         },
         "indexUsageMode": {
           "description": "Specifies the index usage mode for the query.",
-          "enum": [
-            "INDEX_USAGE_MODE_UNSPECIFIED",
-            "UNUSED",
-            "PARTIALLY_USED",
-            "FULLY_USED"
-          ],
+          "enum": ["INDEX_USAGE_MODE_UNSPECIFIED", "UNUSED", "PARTIALLY_USED", "FULLY_USED"],
           "enumDescriptions": [
             "Index usage mode not specified.",
             "No vector indexes were used in the vector search query. See [`indexUnusedReasons`] (/bigquery/docs/reference/rest/v2/Job#IndexUnusedReason) for detailed reasons.",

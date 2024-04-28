@@ -1,4 +1,4 @@
- {
+{
   "comment": "This file maps proto services/RPCs to the corresponding library clients/methods",
   "language": "python",
   "libraryPackage": "googlecloudsdk.generated_clients.gapic_clients.storage_v2",
@@ -11,164 +11,100 @@
           "libraryClient": "StorageClient",
           "rpcs": {
             "BidiWriteObject": {
-              "methods": [
-                "bidi_write_object"
-              ]
+              "methods": ["bidi_write_object"]
             },
             "CancelResumableWrite": {
-              "methods": [
-                "cancel_resumable_write"
-              ]
+              "methods": ["cancel_resumable_write"]
             },
             "ComposeObject": {
-              "methods": [
-                "compose_object"
-              ]
+              "methods": ["compose_object"]
             },
             "CreateBucket": {
-              "methods": [
-                "create_bucket"
-              ]
+              "methods": ["create_bucket"]
             },
             "CreateHmacKey": {
-              "methods": [
-                "create_hmac_key"
-              ]
+              "methods": ["create_hmac_key"]
             },
             "CreateNotificationConfig": {
-              "methods": [
-                "create_notification_config"
-              ]
+              "methods": ["create_notification_config"]
             },
             "DeleteBucket": {
-              "methods": [
-                "delete_bucket"
-              ]
+              "methods": ["delete_bucket"]
             },
             "DeleteHmacKey": {
-              "methods": [
-                "delete_hmac_key"
-              ]
+              "methods": ["delete_hmac_key"]
             },
             "DeleteNotificationConfig": {
-              "methods": [
-                "delete_notification_config"
-              ]
+              "methods": ["delete_notification_config"]
             },
             "DeleteObject": {
-              "methods": [
-                "delete_object"
-              ]
+              "methods": ["delete_object"]
             },
             "GetBucket": {
-              "methods": [
-                "get_bucket"
-              ]
+              "methods": ["get_bucket"]
             },
             "GetHmacKey": {
-              "methods": [
-                "get_hmac_key"
-              ]
+              "methods": ["get_hmac_key"]
             },
             "GetIamPolicy": {
-              "methods": [
-                "get_iam_policy"
-              ]
+              "methods": ["get_iam_policy"]
             },
             "GetNotificationConfig": {
-              "methods": [
-                "get_notification_config"
-              ]
+              "methods": ["get_notification_config"]
             },
             "GetObject": {
-              "methods": [
-                "get_object"
-              ]
+              "methods": ["get_object"]
             },
             "GetServiceAccount": {
-              "methods": [
-                "get_service_account"
-              ]
+              "methods": ["get_service_account"]
             },
             "ListBuckets": {
-              "methods": [
-                "list_buckets"
-              ]
+              "methods": ["list_buckets"]
             },
             "ListHmacKeys": {
-              "methods": [
-                "list_hmac_keys"
-              ]
+              "methods": ["list_hmac_keys"]
             },
             "ListNotificationConfigs": {
-              "methods": [
-                "list_notification_configs"
-              ]
+              "methods": ["list_notification_configs"]
             },
             "ListObjects": {
-              "methods": [
-                "list_objects"
-              ]
+              "methods": ["list_objects"]
             },
             "LockBucketRetentionPolicy": {
-              "methods": [
-                "lock_bucket_retention_policy"
-              ]
+              "methods": ["lock_bucket_retention_policy"]
             },
             "QueryWriteStatus": {
-              "methods": [
-                "query_write_status"
-              ]
+              "methods": ["query_write_status"]
             },
             "ReadObject": {
-              "methods": [
-                "read_object"
-              ]
+              "methods": ["read_object"]
             },
             "RestoreObject": {
-              "methods": [
-                "restore_object"
-              ]
+              "methods": ["restore_object"]
             },
             "RewriteObject": {
-              "methods": [
-                "rewrite_object"
-              ]
+              "methods": ["rewrite_object"]
             },
             "SetIamPolicy": {
-              "methods": [
-                "set_iam_policy"
-              ]
+              "methods": ["set_iam_policy"]
             },
             "StartResumableWrite": {
-              "methods": [
-                "start_resumable_write"
-              ]
+              "methods": ["start_resumable_write"]
             },
             "TestIamPermissions": {
-              "methods": [
-                "test_iam_permissions"
-              ]
+              "methods": ["test_iam_permissions"]
             },
             "UpdateBucket": {
-              "methods": [
-                "update_bucket"
-              ]
+              "methods": ["update_bucket"]
             },
             "UpdateHmacKey": {
-              "methods": [
-                "update_hmac_key"
-              ]
+              "methods": ["update_hmac_key"]
             },
             "UpdateObject": {
-              "methods": [
-                "update_object"
-              ]
+              "methods": ["update_object"]
             },
             "WriteObject": {
-              "methods": [
-                "write_object"
-              ]
+              "methods": ["write_object"]
             }
           }
         },
@@ -176,164 +112,100 @@
           "libraryClient": "StorageAsyncClient",
           "rpcs": {
             "BidiWriteObject": {
-              "methods": [
-                "bidi_write_object"
-              ]
+              "methods": ["bidi_write_object"]
             },
             "CancelResumableWrite": {
-              "methods": [
-                "cancel_resumable_write"
-              ]
+              "methods": ["cancel_resumable_write"]
             },
             "ComposeObject": {
-              "methods": [
-                "compose_object"
-              ]
+              "methods": ["compose_object"]
             },
             "CreateBucket": {
-              "methods": [
-                "create_bucket"
-              ]
+              "methods": ["create_bucket"]
             },
             "CreateHmacKey": {
-              "methods": [
-                "create_hmac_key"
-              ]
+              "methods": ["create_hmac_key"]
             },
             "CreateNotificationConfig": {
-              "methods": [
-                "create_notification_config"
-              ]
+              "methods": ["create_notification_config"]
             },
             "DeleteBucket": {
-              "methods": [
-                "delete_bucket"
-              ]
+              "methods": ["delete_bucket"]
             },
             "DeleteHmacKey": {
-              "methods": [
-                "delete_hmac_key"
-              ]
+              "methods": ["delete_hmac_key"]
             },
             "DeleteNotificationConfig": {
-              "methods": [
-                "delete_notification_config"
-              ]
+              "methods": ["delete_notification_config"]
             },
             "DeleteObject": {
-              "methods": [
-                "delete_object"
-              ]
+              "methods": ["delete_object"]
             },
             "GetBucket": {
-              "methods": [
-                "get_bucket"
-              ]
+              "methods": ["get_bucket"]
             },
             "GetHmacKey": {
-              "methods": [
-                "get_hmac_key"
-              ]
+              "methods": ["get_hmac_key"]
             },
             "GetIamPolicy": {
-              "methods": [
-                "get_iam_policy"
-              ]
+              "methods": ["get_iam_policy"]
             },
             "GetNotificationConfig": {
-              "methods": [
-                "get_notification_config"
-              ]
+              "methods": ["get_notification_config"]
             },
             "GetObject": {
-              "methods": [
-                "get_object"
-              ]
+              "methods": ["get_object"]
             },
             "GetServiceAccount": {
-              "methods": [
-                "get_service_account"
-              ]
+              "methods": ["get_service_account"]
             },
             "ListBuckets": {
-              "methods": [
-                "list_buckets"
-              ]
+              "methods": ["list_buckets"]
             },
             "ListHmacKeys": {
-              "methods": [
-                "list_hmac_keys"
-              ]
+              "methods": ["list_hmac_keys"]
             },
             "ListNotificationConfigs": {
-              "methods": [
-                "list_notification_configs"
-              ]
+              "methods": ["list_notification_configs"]
             },
             "ListObjects": {
-              "methods": [
-                "list_objects"
-              ]
+              "methods": ["list_objects"]
             },
             "LockBucketRetentionPolicy": {
-              "methods": [
-                "lock_bucket_retention_policy"
-              ]
+              "methods": ["lock_bucket_retention_policy"]
             },
             "QueryWriteStatus": {
-              "methods": [
-                "query_write_status"
-              ]
+              "methods": ["query_write_status"]
             },
             "ReadObject": {
-              "methods": [
-                "read_object"
-              ]
+              "methods": ["read_object"]
             },
             "RestoreObject": {
-              "methods": [
-                "restore_object"
-              ]
+              "methods": ["restore_object"]
             },
             "RewriteObject": {
-              "methods": [
-                "rewrite_object"
-              ]
+              "methods": ["rewrite_object"]
             },
             "SetIamPolicy": {
-              "methods": [
-                "set_iam_policy"
-              ]
+              "methods": ["set_iam_policy"]
             },
             "StartResumableWrite": {
-              "methods": [
-                "start_resumable_write"
-              ]
+              "methods": ["start_resumable_write"]
             },
             "TestIamPermissions": {
-              "methods": [
-                "test_iam_permissions"
-              ]
+              "methods": ["test_iam_permissions"]
             },
             "UpdateBucket": {
-              "methods": [
-                "update_bucket"
-              ]
+              "methods": ["update_bucket"]
             },
             "UpdateHmacKey": {
-              "methods": [
-                "update_hmac_key"
-              ]
+              "methods": ["update_hmac_key"]
             },
             "UpdateObject": {
-              "methods": [
-                "update_object"
-              ]
+              "methods": ["update_object"]
             },
             "WriteObject": {
-              "methods": [
-                "write_object"
-              ]
+              "methods": ["write_object"]
             }
           }
         },
@@ -341,164 +213,100 @@
           "libraryClient": "StorageClient",
           "rpcs": {
             "BidiWriteObject": {
-              "methods": [
-                "bidi_write_object"
-              ]
+              "methods": ["bidi_write_object"]
             },
             "CancelResumableWrite": {
-              "methods": [
-                "cancel_resumable_write"
-              ]
+              "methods": ["cancel_resumable_write"]
             },
             "ComposeObject": {
-              "methods": [
-                "compose_object"
-              ]
+              "methods": ["compose_object"]
             },
             "CreateBucket": {
-              "methods": [
-                "create_bucket"
-              ]
+              "methods": ["create_bucket"]
             },
             "CreateHmacKey": {
-              "methods": [
-                "create_hmac_key"
-              ]
+              "methods": ["create_hmac_key"]
             },
             "CreateNotificationConfig": {
-              "methods": [
-                "create_notification_config"
-              ]
+              "methods": ["create_notification_config"]
             },
             "DeleteBucket": {
-              "methods": [
-                "delete_bucket"
-              ]
+              "methods": ["delete_bucket"]
             },
             "DeleteHmacKey": {
-              "methods": [
-                "delete_hmac_key"
-              ]
+              "methods": ["delete_hmac_key"]
             },
             "DeleteNotificationConfig": {
-              "methods": [
-                "delete_notification_config"
-              ]
+              "methods": ["delete_notification_config"]
             },
             "DeleteObject": {
-              "methods": [
-                "delete_object"
-              ]
+              "methods": ["delete_object"]
             },
             "GetBucket": {
-              "methods": [
-                "get_bucket"
-              ]
+              "methods": ["get_bucket"]
             },
             "GetHmacKey": {
-              "methods": [
-                "get_hmac_key"
-              ]
+              "methods": ["get_hmac_key"]
             },
             "GetIamPolicy": {
-              "methods": [
-                "get_iam_policy"
-              ]
+              "methods": ["get_iam_policy"]
             },
             "GetNotificationConfig": {
-              "methods": [
-                "get_notification_config"
-              ]
+              "methods": ["get_notification_config"]
             },
             "GetObject": {
-              "methods": [
-                "get_object"
-              ]
+              "methods": ["get_object"]
             },
             "GetServiceAccount": {
-              "methods": [
-                "get_service_account"
-              ]
+              "methods": ["get_service_account"]
             },
             "ListBuckets": {
-              "methods": [
-                "list_buckets"
-              ]
+              "methods": ["list_buckets"]
             },
             "ListHmacKeys": {
-              "methods": [
-                "list_hmac_keys"
-              ]
+              "methods": ["list_hmac_keys"]
             },
             "ListNotificationConfigs": {
-              "methods": [
-                "list_notification_configs"
-              ]
+              "methods": ["list_notification_configs"]
             },
             "ListObjects": {
-              "methods": [
-                "list_objects"
-              ]
+              "methods": ["list_objects"]
             },
             "LockBucketRetentionPolicy": {
-              "methods": [
-                "lock_bucket_retention_policy"
-              ]
+              "methods": ["lock_bucket_retention_policy"]
             },
             "QueryWriteStatus": {
-              "methods": [
-                "query_write_status"
-              ]
+              "methods": ["query_write_status"]
             },
             "ReadObject": {
-              "methods": [
-                "read_object"
-              ]
+              "methods": ["read_object"]
             },
             "RestoreObject": {
-              "methods": [
-                "restore_object"
-              ]
+              "methods": ["restore_object"]
             },
             "RewriteObject": {
-              "methods": [
-                "rewrite_object"
-              ]
+              "methods": ["rewrite_object"]
             },
             "SetIamPolicy": {
-              "methods": [
-                "set_iam_policy"
-              ]
+              "methods": ["set_iam_policy"]
             },
             "StartResumableWrite": {
-              "methods": [
-                "start_resumable_write"
-              ]
+              "methods": ["start_resumable_write"]
             },
             "TestIamPermissions": {
-              "methods": [
-                "test_iam_permissions"
-              ]
+              "methods": ["test_iam_permissions"]
             },
             "UpdateBucket": {
-              "methods": [
-                "update_bucket"
-              ]
+              "methods": ["update_bucket"]
             },
             "UpdateHmacKey": {
-              "methods": [
-                "update_hmac_key"
-              ]
+              "methods": ["update_hmac_key"]
             },
             "UpdateObject": {
-              "methods": [
-                "update_object"
-              ]
+              "methods": ["update_object"]
             },
             "WriteObject": {
-              "methods": [
-                "write_object"
-              ]
+              "methods": ["write_object"]
             }
           }
         }

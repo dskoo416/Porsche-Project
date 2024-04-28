@@ -1,1 +1,14 @@
 _
+node_modules/
+
+venv/
+
+*.exe
+*.dll
+*.so
+
+package-lock.json
+yarn.lock
+Pipfile.lock
+
+google-cloud-sdk/
