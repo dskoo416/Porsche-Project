@@ -26,20 +26,24 @@ Follow these detailed steps to set up and run the Life Science Dashboard on your
    - Open Visual Studio Code.
    - Click on 'File' -> 'Open Folder...', and select the folder where you extracted the project.
 
-3. **Install dependencies**
+3. **Scaffold the project**
    - Open a new terminal in VS Code (`Terminal` -> `New Terminal`).
-   - Run the following command to install the necessary dependencies:
+   - Run the following command to create a new instance of the project:
+     ```bash
+     npm create life-science@latest
+     ```
+
+4. **Install dependencies**
+   - Navigate into the newly created project directory (if applicable) and run:
      ```bash
      npm install
      ```
 
-4. **Start the development server**
+5. **Start the development server**
    - In the same terminal, start the local development server by running:
      ```bash
      npm run dev
      ```
    - Once the server is running, you can access the dashboard by opening [http://localhost:5173/](http://localhost:5173/) in your web browser.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
